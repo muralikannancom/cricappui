@@ -1,0 +1,469 @@
+<div ng-include="'templates/editheader.html'"></div>
+
+<div class="userinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="userinfo_dp" ng-style="setlogo" z-depth-3>
+
+          <div class="file-field input-field">
+            <div class="btn settournamentlogo tooltipped" data-position="right" data-delay="50" data-tooltip="Select Logo">
+              <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+              <input id="set_logo" type="file">
+            </div>
+            <div class="file-path-wrapper createtournament_filepath">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+
+          <!-- <img src={{teamdp}} alt="" /> -->
+        </div>
+        <div class="userinfo_info">
+          <div class="container">
+          <div class="row">
+    <form>
+        <div class="input-field col s12">
+          <input placeholder="Tournament Name" id="Tournament_name" type="text" class="validate" value="{{Name}}">
+          <!-- <label for="Tournament_name">Tournament Name</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Tournament City" id="Tournament_city" type="text" class="validate" value="{{City}}">
+          <!-- <label for="Tournament_city">Tournament City</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Tournament Country" id="Tournament_country" type="text" class="validate" value="{{Country}}">
+          <!-- <label for="Tournament_country">Tournament Country</label> -->
+    </div>
+    </form>
+  </div>
+</div>
+          <br>
+          <a href="#tournament" class="waves-effect waves-light btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</a> <a class="waves-effect waves-light btn red"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="upload_cover_button">
+        <form action="#">
+  <div class="file-field input-field">
+    <div class="btn uploadbutton tooltipped" data-position="left" data-delay="50" data-tooltip="Change Cover Pic">
+      <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+      <input id="upload_cover_file" type="file">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs internal_navbar">
+    <li class="tab col s3"><a class="active" href="#teamstats">FIXTURES</a></li>
+    <li class="tab col s3"><a class="" href="#teamsquad">TEAMS</a></li>
+    <li class="tab col s3"><a href="#test4">LEADERBOARD</a></li>
+  </ul>
+    </div>
+    <div id="teamstats" class="col s12">
+      <div class="contents">
+        <div class="user_profile_card">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">UPCOMING MATCHES</h5>
+            </div>
+            <div class="row">
+            <div class="col s12 m6">
+              <div class="team_match_card">
+
+                    <div class="match_card z-depth-1">
+                      <div class="edit_item modal-trigger" data-target="creatematch">
+                        <i class="fa fa-pencil tooltipped" data-position="left" data-delay="50" data-tooltip="Edit" aria-hidden="true"></i>
+                      </div>
+                      <div class="row nomargin">
+                        <div class="col s6">
+                          <div class="team_card">
+                            <div class="team_card_dp z-depth-1">
+                              <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                            </div>
+                            <h6 class="truncate">Derbyshire Falcons</h6>
+                          </div>
+                        </div>
+                        <div class="col s6">
+                          <div class="team_card">
+                            <div class="team_card_dp z-depth-1">
+                              <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                            </div>
+                            <h6 class="truncate">Derbyshire Falcons</h6>
+                          </div>
+                        </div>
+                        <div class="col s12 nopad">
+                          <div class="row nomargin match_card_details">
+                            <div class="col s6 truncate">
+                              <i class="fa fa-calendar" aria-hidden="true"></i> 12 June 2016
+                            </div>
+                            <div class="col s6 truncate">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i> MA chidambaram stadium
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="valign-wrapper">
+                <div class="addbtn addmatch valign modal-trigger" data-target="creatematch">
+                  <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                  <br>
+                  Add Match
+                </div>
+                <div id="creatematch" class="createmodal modal">
+                <div class="modal-content nopad">
+                  <h5>Create New Match <span id="modalclose" class="modalclose modal-action modal-close waves-effect waves-red  ">X</span></h5>
+                  <div class="createmodal_form">
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <select class="icons">
+                              <option value="" disabled> Select Home Team</option>
+                              <option value="" selected data-icon="{{teamdp}}" class="left circle">Chennai Super Kings</option>
+                              <option value="" data-icon="{{teamdp}}" class="left circle">Trinidad & Tobago</option>
+                              <option value="" data-icon="{{teamdp}}" class="left circle">Essex Eagles</option>
+                            </select>
+                            </div>
+                            <div class="input-field col s6">
+                              <select class="icons">
+                              <option value="" disabled selected>Select Away Team</option>
+                              <option value="" data-icon="{{teamdp}}" class="left circle">Chennai Super Kings</option>
+                              <option value="" data-icon="{{teamdp}}" class="left circle">Trinidad & Tobago</option>
+                              <option value="" data-icon="{{teamdp}}" class="left circle">Essex Eagles</option>
+                            </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input placeholder="" id="Set_date" type="date" class="datepicker">
+                            <label for="Set_date"><i class="fa fa-calendar" aria-hidden="true"></i> Date</label>
+                          </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                            <input id="Select_venue" type="text" class="validate">
+                            <label for="Select_venue"><i class="fa fa-map-marker" aria-hidden="true"></i> Venue</label>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="modalbuttongroup">
+                        <a href="" class="center waves-effect waves-light btn createbtn"><i class="fa fa-check" aria-hidden="true"></i> CREATE MATCH</a>
+                        <a href="" class="center waves-effect waves-light btn deletebtn modal-close red"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</a>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<div id="teamsquad" class="col s12">
+ <div class="contents">
+   <ul class="cardbox">
+     <div class="row">
+       <ul class="cardbox">
+       <h5 class="seg_title">TEAMS</h5>
+       <div class="row">
+       <li>
+         <div class="col s6 m4 l2">
+           <a href="#team">
+         <div class="team_card z-depth-1">
+           <div class="edit_item">
+             <i class="fa fa-times removeitem" data-position="left" data-delay="50" data-tooltip="Remove" aria-hidden="true"></i>
+           </div>
+           <div class="team_card_dp z-depth-1">
+             <img src="https://pbs.twimg.com/profile_images/378800000329810220/e115c552e38ff57031f0d24e6813904e_400x400.png" alt="" />
+           </div>
+           <h6 class="truncate">Guyana Amazon Warriors</h6>
+         </div>
+         </a>
+         </div>
+       </li>
+       <li>
+         <div class="col s6 m4 l2">
+           <a href="#team">
+         <div class="team_card z-depth-1">
+           <div class="edit_item">
+             <i class="fa fa-times removeitem" data-position="left" data-delay="50" data-tooltip="Remove" aria-hidden="true"></i>
+           </div>
+           <div class="team_card_dp z-depth-1">
+             <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+           </div>
+           <h6 class="truncate">Derbyshire Falcons</h6>
+         </div>
+         </a>
+         </div>
+       </li>
+       <li>
+         <div class="col s6 m4 l2">
+           <a href="#team">
+         <div class="team_card z-depth-1">
+           <div class="edit_item">
+             <i class="fa fa-times removeitem" data-position="left" data-delay="50" data-tooltip="Remove" aria-hidden="true"></i>
+           </div>
+           <div class="team_card_dp z-depth-1">
+             <img src="http://www.tnfcricket.com/assets/files/2015/08/EssexEagles.jpg" alt="" />
+           </div>
+           <h6 class="truncate">Essex Eagles</h6>
+         </div>
+         </a>
+         </div>
+       </li>
+       <li>
+         <div class="col s6 m4 l2">
+           <a href="#team">
+         <div class="team_card z-depth-1">
+           <div class="edit_item">
+             <i class="fa fa-times removeitem" data-position="left" data-delay="50" data-tooltip="Remove" aria-hidden="true"></i>
+           </div>
+           <div class="team_card_dp z-depth-1">
+             <img src="https://lh3.googleusercontent.com/FnT0IoWFRESjFtg4bAkNHkYhw2MSZxOzSlZvkcKmwIOYoGb81TDoPcSinEj-iXdJXYQ=w300" alt="" />
+           </div>
+           <h6 class="truncate">Chennai Super Kings</h6>
+         </div>
+         </a>
+         </div>
+       </li>
+       <li>
+         <div class="col s12 m4 l2">
+           <div class="valign-wrapper">
+             <div class="addbtn addteam valign modal-trigger" data-target="addnewteam">
+               <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+               <br>
+               Add Team
+             </div>
+             <div id="addnewteam" class="createmodal modal">
+             <div class="modal-content nopad">
+               <h5>Add New Team <span id="modalclose" class="modalclose modal-action modal-close waves-effect waves-red  ">X</span></h5>
+               <div class="createmodal_form">
+                 <div class="row">
+                     <form class="col s12">
+                       <div class="row">
+                         <div class="input-field col s12">
+                           <input id="search" class="search nomargin" type="text" class="validate dark">
+                         <label for="search"><i class="fa fa-search" aria-hidden="true"></i> Search Team</label>
+                       </div>
+                       </div>
+
+                           <div class="searchresultsbox z-depth-1">
+                             <div class="row nopad nomargin">
+                               <div class="col s12 nopad nomargin">
+                             <ul>
+                               <li>Result 1 ..</li>
+                               <li>Result 2 ..</li>
+                               <li>Result 3 ..</li>
+                               <li>Result 4 ..</li>
+                             </ul>
+                           </div>
+                         </div>
+                           </div>
+
+                   </div>
+                   <div class="modalbuttongroup">
+                     <a href="" class="center waves-effect waves-light btn createbtn"><i class="fa fa-check" aria-hidden="true"></i> ADD TEAM</a>
+                     <a href="" class="center waves-effect waves-light btn cancelbtn modal-close red"><i class="fa fa-times" aria-hidden="true"></i> CANCEL</a>
+                   </div>
+</form>
+               </div>
+             </div>
+           </div>
+           </div>
+         </div>
+       </li>
+
+         </div>
+
+
+
+       </ul>
+
+     </div>
+   </ul>
+ </div>
+</div>
+<div id="test4" class="col s12">
+ <div class="row">
+<div class="col s12">
+  <div class="cardbox">
+  <h5>LEADERBOARD</h5>
+  <div class="row">
+    <div class=" col s12 m6 l4">
+      <div class="leaderboard_stats_card z-depth-1">
+        <h6>Highest Score</h6>
+        <h5 class="truncate">player Name</h5>
+        <h6>Team Name</h6>
+        <h3>100<sup>*</sup></h3>
+        <div class="leaderboard_stats_card_dp z-depth-1">
+          <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+        </div>
+      </div>
+    </div><!-- col -->
+    <div class=" col s12 m6 l4">
+      <div class="leaderboard_stats_card z-depth-1">
+        <h6>Highest Score</h6>
+        <h5 class="truncate">player Name</h5>
+        <h6>Team Name</h6>
+        <h3>100<sup>*</sup></h3>
+        <div class="leaderboard_stats_card_dp z-depth-1">
+          <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+        </div>
+      </div>
+    </div><!-- col -->
+    <div class=" col s12 m6 l4">
+      <div class="leaderboard_stats_card z-depth-1">
+        <h6>Highest Score</h6>
+        <h5 class="truncate">player Name</h5>
+        <h6>Team Name</h6>
+        <h3>100<sup>*</sup></h3>
+        <div class="leaderboard_stats_card_dp z-depth-1">
+          <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+        </div>
+      </div>
+    </div><!-- col -->
+    <div class=" col s12 m6 l4">
+      <div class="leaderboard_stats_card z-depth-1">
+        <h6>Highest Score</h6>
+        <h5 class="truncate">player Name</h5>
+        <h6>Team Name</h6>
+        <h3>100<sup>*</sup></h3>
+        <div class="leaderboard_stats_card_dp z-depth-1">
+          <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+        </div>
+      </div>
+    </div><!-- col -->
+    <div class=" col s12 m6 l4">
+      <div class="leaderboard_stats_card z-depth-1">
+        <h6>Highest Score</h6>
+        <h5 class="truncate">player Name</h5>
+        <h6>Team Name</h6>
+        <h3>100<sup>*</sup></h3>
+        <div class="leaderboard_stats_card_dp z-depth-1">
+          <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+        </div>
+      </div>
+    </div><!-- col -->
+    <div class=" col s12 m6 l4">
+      <div class="leaderboard_stats_card z-depth-1">
+        <h6>Highest Score</h6>
+        <h5 class="truncate">player Name</h5>
+        <h6>Team Name</h6>
+        <h3>100<sup>*</sup></h3>
+        <div class="leaderboard_stats_card_dp z-depth-1">
+          <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+        </div>
+      </div>
+    </div><!-- col -->
+
+  </div>
+  </div>
+</div>
+ </div>
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('ul.tabs').tabs();
+  $('.modal-trigger').leanModal({
+    dismissible : true,
+    in_duration:500,
+    out_duration: 500,
+  });
+   $('select').material_select();
+  // $('.modalclose').closeModal();
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 1
+  });
+
+  $('.uploadbutton').hide();
+  $( '.userinfo' ).hover(function() {
+    $('.uploadbutton').toggle();
+  });
+
+  function image_upload_preview(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.topsegment .parallax-container .parallax img').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#upload_cover_file").change(function(){
+    image_upload_preview(this);
+  });
+  $('.tooltipped').tooltip({delay: 50});
+
+  function setlogo(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.userinfo_dp').css({
+              'background-image': 'url(' + e.target.result + ')',
+            });
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#set_logo").change(function(){
+    setlogo(this);
+  });
+
+  $('.createbtn').click(function(){
+    var item = $('.createbtn');
+    item.prop('disabled', true).removeClass('waves-effect').addClass('disabled').html("<i class='fa fa-circle-o-notch fa-spin' aria-hidden='true'></i> CREATING");
+  });
+    $('.searchresultsbox').hide();
+function search(){
+  $('#search').keydown(function(){
+    $('.searchresultsbox').slideDown();
+    $('.searchresultsbox ul li').click(function(){
+      var result = $(this).text();
+      $("#search").val(result);
+    });
+  });
+  $("#search").parent().parent().click(function(){
+    $('.searchresultsbox').hide();
+  });
+}
+search();
+$('.removeitem').click(function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().parent().remove();
+});
+$('#upload_cover_file').hover(function(){
+  $('.editbg').css({
+    "filter" : "blur(0rem)",
+  });
+});
+$('#upload_cover_file').mouseleave(function(){
+  $('.editbg').css({
+    "filter" : "blur(0.3rem)",
+  });
+});
+// $('.picker__holder').insertAfter('.user_profile_card');
+
+</script>

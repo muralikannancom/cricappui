@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=false">
+     <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>Cricket App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/Materialize/stylesheets/materialize.css" media="screen" charset="utf-8">
+  </head>
+  <body ng-app="cricapp" >
+    <!-- <div ng-include="'templates/header.html'"></div> -->
+    <div ng-include="'templates/navbar.html'" ng-controller="navController"></div>
+    <div ng-view></div>
+    <!-- <div ng-include="'templates/profileinfo.html'"></div> -->
+    <!-- <div ng-include="'templates/userprofile.html'"></div> -->
+    <div class="add_fab">
+      <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large">
+    <i class="fa fa-plus" aria-hidden="true"></i>
+  </a>
+  <ul class="add_fab_ul">
+    <li><a class="btn-floating addfab_item darken-1" href="#createteam">Create new Team</a></li>
+    <li><a class="btn-floating addfab_item" href="#createtournament">Create New Tournament</a></li>
+  </ul>
+</div>
+    </div>
+
+
+<!-- <footer ng-include="'templates/footer.html'"></footer> -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+  </body>
+
+</html>

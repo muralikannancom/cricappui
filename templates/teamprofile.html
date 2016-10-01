@@ -1,0 +1,306 @@
+<div ng-include="'templates/header.html'"></div>
+
+<div class="userinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="userinfo_dp z-depth-3">
+          <img src={{teamdp}} alt="" />
+        </div>
+        <div class="userinfo_info">
+          <h4>{{Name}}</h4>
+          <h6>{{City}},{{Country}}</h6>
+          <br>
+          <a href="#editteam" class="waves-effect waves-light btn"><i class="fa fa-sliders" aria-hidden="true"></i> EDIT</a>
+          <a class="waves-effect waves-light btn jointeam">JOIN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="upload_cover_button">
+        <form action="#">
+  <div class="file-field input-field">
+    <div class="btn uploadbutton tooltipped" data-position="left" data-delay="50" data-tooltip="Change Cover Pic">
+      <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+      <input id="upload_cover_file" type="file">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs internal_navbar">
+    <li class="tab col s3"><a class="active" href="#teamstats">STATISTICS</a></li>
+    <li class="tab col s3"><a class="" href="#teamsquad">SQUAD</a></li>
+    <li class="tab col s3"><a href="#test4">RELATED TEAMS</a></li>
+  </ul>
+    </div>
+    <div id="teamstats" class="col s12">
+      <div class="contents">
+        <div class="user_profile_card">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">TEAM STATISTICS</h5>
+            </div>
+            <div class="col s12 nopad">
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Total Matches</h6>
+                    <h3>200</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Total Wins</h6>
+                    <h3>132</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Tournaments Won</h6>
+                    <h3>4</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Winning %</h6>
+                    <h3>66%</h3>
+                  </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l12">
+              <div class="stats_card z-depth-1">
+             </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">UPCOMING MATCHES</h5>
+            </div>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="team_match_card">
+
+                      <div class="match_card z-depth-1">
+                        <div class="row nomargin">
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s12 nopad">
+                            <div class="row nomargin match_card_details">
+                              <div class="col s6 truncate">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> 12 June 2016
+                              </div>
+                              <div class="col s6 truncate">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> MA chidambaram stadium
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+
+              <div class="col s12 m6">
+                <div class="team_match_card">
+
+                      <div class="match_card z-depth-1">
+                        <div class="row nomargin">
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s12 nopad">
+                            <div class="row nomargin match_card_details">
+                              <div class="col s6 truncate">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> 12 June 2016
+                              </div>
+                              <div class="col s6 truncate">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> MA chidambaram stadium
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<div id="teamsquad" class="col s12">
+ <div class="contents">
+   <ul class="cardbox">
+            <h5>CURRENT SQUAD</h5>
+     <div class="row">
+       <ul>
+         <li>
+           <div class="col s12 m4">
+             <div class="team_squad_card z-depth-1">
+               <div class="team_squad_card_dp z-depth-1">
+                 <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+               </div>
+               <h6 class="truncate">Player Name</h6>
+               <h6 class="truncate">Player Role</h6>
+             </div>
+           </div>
+         </li>
+         <li>
+           <div class="col s12 m4">
+             <div class="team_squad_card z-depth-1">
+               <div class="team_squad_card_dp z-depth-1">
+                 <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+               </div>
+               <h6 class="truncate">Player Name</h6>
+               <h6 class="truncate">Player Role</h6>
+             </div>
+           </div>
+         </li>
+       </ul>
+
+     </div>
+   </ul>
+ </div>
+</div>
+<div id="test4" class="col s12">
+ <div class="row">
+<div class="col s12">
+<ul class="cardbox">
+<h5 class="seg_title">RELATED TEAMS</h5>
+<div class="row">
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="https://pbs.twimg.com/profile_images/378800000329810220/e115c552e38ff57031f0d24e6813904e_400x400.png" alt="" />
+    </div>
+    <h6 class="truncate">Guyana Amazon Warriors</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+    </div>
+    <h6 class="truncate">Derbyshire Falcons</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="http://www.tnfcricket.com/assets/files/2015/08/EssexEagles.jpg" alt="" />
+    </div>
+    <h6 class="truncate">Essex Eagles</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="https://lh3.googleusercontent.com/FnT0IoWFRESjFtg4bAkNHkYhw2MSZxOzSlZvkcKmwIOYoGb81TDoPcSinEj-iXdJXYQ=w300" alt="" />
+    </div>
+    <h6 class="truncate">Chennai Super Kings</h6>
+  </div>
+  </a>
+  </div>
+</li>
+
+  </div>
+
+
+
+</ul>
+</div>
+ </div>
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('ul.tabs').tabs();
+
+  $('.uploadbutton').hide();
+  $( '.userinfo' ).hover(function() {
+    $('.uploadbutton').toggle();
+  });
+
+  function image_upload_preview(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.topsegment .parallax-container .parallax img').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#upload_cover_file").change(function(){
+    image_upload_preview(this);
+  });
+  $('.tooltipped').tooltip({delay: 50});
+  $(window).scroll(function(){
+  $(".userinfo").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+  var item = $('.jointeam');
+
+item.hover(function(){
+  var status = item.text();
+  if(status == "JOIN"){
+    item.click(function(){
+      item.removeClass('waves-effect').addClass('processing').html("<i class='fa fa-check' aria-hidden='true'></i> JOINED");
+    });
+}
+// if(status == " JOINED"){
+//   item.hover(function(){
+//     item.addClass('waves-effect').removeClass('processing').html("<i class='fa fa-check' aria-hidden='true'></i> LEAVE");
+//   });
+// }
+});
+</script>

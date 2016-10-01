@@ -1,0 +1,40 @@
+<div class="navbar">
+      <a href="#" data-activates="slide-out" class="button-collapse font_color menu_icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+      <span class="logo">{{LOGO}}</span>
+      <div class="profile_dp_box z-depth-1 fixed-action-btn horizontal hide-on-small-only" style="top: 0rem; right: 0rem;">
+    <a class="btn-floating btn-large profile_dp" ng-style="userdp">
+      <!-- <img src="http://static.comicvine.com/uploads/original/11125/111253442/4897645-batman.jpg" alt="" /> -->
+    </a>
+    <ul>
+      <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="EDIT PROFILE"><a href="#editprofile" class="btn-floating"><i class="fa fa-sliders" aria-hidden="true"></i></a></li>
+      <li class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="LOGOUT"><a class="btn-floating"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="hide-on-small-only username_disp_desktop">
+    <h6 class="truncate z-depth-1">First Last Name</h6>
+  </div>
+
+
+</div>
+<ul id="slide-out" class="side-nav menubar">
+  <div class="menubar_header hide-on-med-and-up">
+    <div class="mobile_profile_dp_box">
+      <div class="profile_dp">
+        <img src="http://static.comicvine.com/uploads/original/11125/111253442/4897645-batman.jpg" alt="" />
+      </div>
+      <div class="userinfo_info">
+        <h5>Player Name</h5>
+        <h6>12 <i class="fa fa-mars" aria-hidden="true"></i> chennai,INDIA</h6>
+
+
+      </div>
+    </div>
+  </div>
+  <li><a href="#!">MY PROFILE</a></li>
+  <li><a href="#team">MY TEAMS</a></li>
+  <li><a href="#tournament">TOURNAMENT</a></li>
+  <li><a href="#match">MATCH</a></li>
+</ul>
+<script type="text/javascript">
+$('.button-collapse').sideNav();
+</script>

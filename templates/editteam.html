@@ -1,0 +1,427 @@
+<div ng-include="'templates/editheader.html'"></div>
+
+<div class="userinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="userinfo_dp" ng-style="setlogo" z-depth-3>
+
+          <div class="file-field input-field">
+            <div class="btn settournamentlogo tooltipped" data-position="right" data-delay="50" data-tooltip="Select Logo">
+              <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+              <input id="set_logo" type="file">
+            </div>
+            <div class="file-path-wrapper createtournament_filepath">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+
+          <!-- <img src={{teamdp}} alt="" /> -->
+        </div>
+        <div class="userinfo_info">
+          <div class="container">
+          <div class="row">
+    <form>
+        <div class="input-field col s12">
+          <input placeholder="Team Name" id="Team_name" type="text" class="validate" value="{{Name}}">
+          <!-- <label for="Tournament_name">Tournament Name</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Team City" id="Team_city" type="text" class="validate" value="{{City}}">
+          <!-- <label for="Tournament_city">Tournament City</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Team Country" id="Team_country" type="text" class="validate" value="{{Country}}">
+          <!-- <label for="Tournament_country">Tournament Country</label> -->
+    </div>
+    </form>
+  </div>
+</div>
+          <br>
+          <a href="#team" class="waves-effect waves-light btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</a> <a class="waves-effect waves-light btn red"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="upload_cover_button">
+        <form action="#">
+  <div class="file-field input-field">
+    <div class="btn uploadbutton tooltipped" data-position="left" data-delay="50" data-tooltip="Change Cover Pic">
+      <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+      <input id="upload_cover_file" type="file">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs internal_navbar">
+    <li class="tab col s3"><a class="active" href="#teamstats">STATISTICS</a></li>
+    <li class="tab col s3"><a class="" href="#teamsquad">SQUAD</a></li>
+    <li class="tab col s3"><a href="#test4">RELATED TEAMS</a></li>
+  </ul>
+    </div>
+    <div id="teamstats" class="col s12">
+      <div class="contents">
+        <div class="user_profile_card">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">TEAM STATISTICS</h5>
+            </div>
+            <div class="col s12 nopad">
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Total Matches</h6>
+                    <h3>200</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Total Wins</h6>
+                    <h3>132</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Tournaments Won</h6>
+                    <h3>4</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Winning %</h6>
+                    <h3>66%</h3>
+                  </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l12">
+              <div class="stats_card z-depth-1">
+             </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">UPCOMING MATCHES</h5>
+            </div>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="team_match_card">
+
+                      <div class="match_card z-depth-1">
+                        <div class="row nomargin">
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s12 nopad">
+                            <div class="row nomargin match_card_details">
+                              <div class="col s6 truncate">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> 12 June 2016
+                              </div>
+                              <div class="col s6 truncate">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> MA chidambaram stadium
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+
+              <div class="col s12 m6">
+                <div class="team_match_card">
+
+                      <div class="match_card z-depth-1">
+                        <div class="row nomargin">
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s6">
+                            <div class="team_card">
+                              <div class="team_card_dp z-depth-1">
+                                <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+                              </div>
+                              <h6 class="truncate">Derbyshire Falcons</h6>
+                            </div>
+                          </div>
+                          <div class="col s12 nopad">
+                            <div class="row nomargin match_card_details">
+                              <div class="col s6 truncate">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> 12 June 2016
+                              </div>
+                              <div class="col s6 truncate">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> MA chidambaram stadium
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<div id="teamsquad" class="col s12">
+ <div class="contents">
+   <ul class="cardbox">
+            <h5>CURRENT SQUAD</h5>
+     <div class="row">
+       <ul>
+         <li>
+           <div class="col s12 m4">
+             <div class="team_squad_card z-depth-1">
+               <div class="team_squad_card_dp z-depth-1">
+                 <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+               </div>
+               <h6 class="truncate">Player Name</h6>
+               <h6 class="truncate">Player Role</h6>
+             </div>
+           </div>
+         </li>
+         <li>
+           <div class="col s12 m4">
+             <div class="team_squad_card z-depth-1">
+               <div class="team_squad_card_dp z-depth-1">
+                 <img src="http://ste.india.com/sites/default/files/2015/04/11/345370-sachin-tendulkar-mi-pract.jpg" alt="" />
+               </div>
+               <h6 class="truncate">Player Name</h6>
+               <h6 class="truncate">Player Role</h6>
+             </div>
+           </div>
+         </li>
+         <li>
+           <div class="col s12 m4 l2">
+             <div class="valign-wrapper">
+               <div class="addbtn addteam valign modal-trigger" data-target="addnewplayer">
+                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                 <br>
+                 Add Player
+               </div>
+               <div id="addnewplayer" class="createmodal modal">
+               <div class="modal-content nopad">
+                 <h5>Add Player <span id="modalclose" class="modalclose modal-action modal-close waves-effect waves-red  ">X</span></h5>
+                 <div class="createmodal_form">
+                   <div class="row">
+                       <form class="col s12">
+                         <div class="row">
+                           <div class="input-field col s12">
+                             <input id="search" class="search nomargin" type="text" class="validate dark">
+                           <label for="search"><i class="fa fa-search" aria-hidden="true"></i> Search Player</label>
+                         </div>
+                         </div>
+
+                             <div class="searchresultsbox z-depth-1">
+                               <div class="row nopad nomargin">
+                                 <div class="col s12 nopad nomargin">
+                               <ul>
+                                 <li>Result 1 ..</li>
+                                 <li>Result 2 ..</li>
+                                 <li>Result 3 ..</li>
+                                 <li>Result 4 ..</li>
+                               </ul>
+                             </div>
+                           </div>
+                             </div>
+
+                     </div>
+                     <div class="modalbuttongroup">
+                       <a href="" class="center waves-effect waves-light btn addplayer"><i class="fa fa-check" aria-hidden="true"></i> ADD PLAYER</a>
+                       <a href="" class="center waves-effect waves-light btn cancelbtn modal-close red"><i class="fa fa-times" aria-hidden="true"></i> CANCEL</a>
+                     </div>
+  </form>
+                 </div>
+               </div>
+             </div>
+             </div>
+           </div>
+         </li>
+       </ul>
+
+     </div>
+   </ul>
+ </div>
+</div>
+<div id="test4" class="col s12">
+ <div class="row">
+<div class="col s12">
+<ul class="cardbox">
+<h5 class="seg_title">RELATED TEAMS</h5>
+<div class="row">
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="https://pbs.twimg.com/profile_images/378800000329810220/e115c552e38ff57031f0d24e6813904e_400x400.png" alt="" />
+    </div>
+    <h6 class="truncate">Guyana Amazon Warriors</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+    </div>
+    <h6 class="truncate">Derbyshire Falcons</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="http://www.tnfcricket.com/assets/files/2015/08/EssexEagles.jpg" alt="" />
+    </div>
+    <h6 class="truncate">Essex Eagles</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="https://lh3.googleusercontent.com/FnT0IoWFRESjFtg4bAkNHkYhw2MSZxOzSlZvkcKmwIOYoGb81TDoPcSinEj-iXdJXYQ=w300" alt="" />
+    </div>
+    <h6 class="truncate">Chennai Super Kings</h6>
+  </div>
+  </a>
+  </div>
+</li>
+
+  </div>
+
+
+
+</ul>
+</div>
+ </div>
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('ul.tabs').tabs();
+  $('.modal-trigger').leanModal({
+    dismissible : true,
+    in_duration:500,
+    out_duration: 500,
+  });
+  $('.uploadbutton').hide();
+  $( '.userinfo' ).hover(function() {
+    $('.uploadbutton').toggle();
+  });
+
+  function image_upload_preview(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.topsegment .parallax-container .parallax img').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#upload_cover_file").change(function(){
+    image_upload_preview(this);
+  });
+  $('.tooltipped').tooltip({delay: 50});
+  var item = $('.jointeam');
+
+item.hover(function(){
+  var status = item.text();
+  if(status == "JOIN"){
+    item.click(function(){
+      item.removeClass('waves-effect').addClass('processing').html("<i class='fa fa-check' aria-hidden='true'></i> JOINED");
+    });
+}
+// if(status == " JOINED"){
+//   item.hover(function(){
+//     item.addClass('waves-effect').removeClass('processing').html("<i class='fa fa-check' aria-hidden='true'></i> LEAVE");
+//   });
+// }
+});
+function setlogo(input) {
+
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+          $('.userinfo_dp').css({
+            'background-image': 'url(' + e.target.result + ')',
+          });
+      }
+      reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#set_logo").change(function(){
+  setlogo(this);
+});
+
+$('.searchresultsbox').hide();
+function search(){
+$('#search').keydown(function(){
+$('.searchresultsbox').slideDown();
+$('.searchresultsbox ul li').click(function(){
+  var result = $(this).text();
+  $("#search").val(result);
+});
+});
+$("#search").parent().parent().click(function(){
+$('.searchresultsbox').hide();
+});
+}
+search();
+$('.addplayer').click(function(){
+  var item = $('.addplayer');
+  item.prop('disabled', true).removeClass('waves-effect').addClass('disabled').html("<i class='fa fa-circle-o-notch fa-spin' aria-hidden='true'></i> ADDING");
+});
+$('#upload_cover_file').hover(function(){
+  $('.editbg').css({
+    "filter" : "blur(0rem)",
+  });
+});
+$('#upload_cover_file').mouseleave(function(){
+  $('.editbg').css({
+    "filter" : "blur(0.3rem)",
+  });
+});
+</script>

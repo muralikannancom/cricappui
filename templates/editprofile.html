@@ -1,0 +1,476 @@
+<div ng-include="'templates/header.html'"></div>
+
+<div class="userinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="userinfo_dp" ng-style="setlogo" z-depth-3>
+
+          <div class="file-field input-field">
+            <div class="btn setdp tooltipped" data-position="right" data-delay="50" data-tooltip="Change Profile Pictue">
+              <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+              <input id="set_dp" type="file">
+            </div>
+            <div class="file-path-wrapper setdp_filepath">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+
+          <!-- <img src={{teamdp}} alt="" /> -->
+        </div>
+        <div class="userinfo_info">
+          <div class="container">
+          <div class="row">
+    <form>
+        <div class="input-field col s12">
+          <input placeholder="Name" id="User_name" type="text" class="validate" value="{{Name}}">
+          <!-- <label for="User_name">Name</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Age" id="User_city" type="text" class="validate" value="{{userage}}">
+          <!-- <label for="Tournament_city">Tournament City</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="City" id="User_city" type="text" class="validate" value="{{City}}">
+          <!-- <label for="Tournament_city">Tournament City</label> -->
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Country" id="User_country" type="text" class="validate" value="{{Country}}">
+          <!-- <label for="Tournament_country">Tournament Country</label> -->
+    </div>
+    </form>
+  </div>
+</div>
+          <br>
+          <a href="#profile" class="waves-effect waves-light btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> SAVE</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="upload_cover_button">
+        <form action="#">
+  <div class="file-field input-field">
+    <div class="btn uploadbutton tooltipped" data-position="left" data-delay="50" data-tooltip="Change Cover Pic">
+      <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+      <input id="upload_cover_file" type="file">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs internal_navbar">
+    <li class="tab col s3"><a class="active" href="#test1">STATISTICS</a></li>
+    <li class="tab col s3"><a class="" href="#test2">ACHIEVEMENTS</a></li>
+    <li class="tab col s3"><a href="#test4">TEAMS</a></li>
+  </ul>
+    </div>
+    <div id="test1" class="col s12">
+      <div class="contents">
+        <div class="user_profile_card">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">BATTING STATISTICS</h5>
+            </div>
+            <div class="col s12 nopad">
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Total Matches</h6>
+                    <h3>200</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Total Runs</h6>
+                    <h3>2030</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Highest Score</h6>
+                    <h3>80</h3>
+                  </div>
+              </div>
+              <div class="col s6 m6 l3">
+                  <div class="stats z-depth-1">
+                    <h6>Centuries</h6>
+                    <h3>2</h3>
+                  </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l12">
+              <div class="stats_card z-depth-1">
+                  <table class="responsive-table stats_data">
+                    <thead>
+                      <tr>
+                          <th data-field="id">YEAR</th>
+                          <th data-field="name">MAT</th>
+                          <th data-field="price">RUNS</th>
+                          <th data-field="price">HS</th>
+                          <th data-field="price">AVE</th>
+                          <th data-field="price">BF</th>
+                          <th data-field="price">SR</th>
+                          <th data-field="price">100</th>
+                          <th data-field="price">50</th>
+                          <th data-field="price">4s</th>
+                          <th data-field="price">6s</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>2016</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2015</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h5 class="seg_title">BOWLING STATISTICS</h5>
+            </div>
+            <div class="col s6 m6 l3">
+                <div class="stats z-depth-1">
+                  <h6>Total Matches</h6>
+                  <h3>200</h3>
+                </div>
+            </div>
+            <div class="col s6 m6 l3">
+                <div class="stats z-depth-1">
+                  <h6>Total Matches</h6>
+                  <h3>200</h3>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+              <div class="stats_card z-depth-1">
+                  <table class="responsive-table stats_data">
+                    <thead>
+                      <tr>
+                          <th data-field="id">YEAR</th>
+                          <th data-field="name">MAT</th>
+                          <th data-field="price">RUNS</th>
+                          <th data-field="price">HS</th>
+                          <th data-field="price">AVE</th>
+                          <th data-field="price">BF</th>
+                          <th data-field="price">SR</th>
+                          <th data-field="price">100</th>
+                          <th data-field="price">50</th>
+                          <th data-field="price">4s</th>
+                          <th data-field="price">6s</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>2016</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2015</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                      <tr>
+                        <td>2014</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>82</td>
+                        <td>32</td>
+                        <td>1</td>
+                        <td>82</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>43</td>
+                        <td>54</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+            </div>
+            <!-- <div class="col s6 m6 l2">
+              <div class="card darken-1">
+                <div class="stats">
+                  <h6>Matches</h6>
+                  <h3>32</h3>
+                </div>
+             </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+<div id="test2" class="col s12">
+ <div class="contents">
+   <ul class="cardbox">
+     <div class="row">
+       <li>
+           <div class="col s12">
+             <div class="achievement_stats z-depth-1 valign-wrapper">
+               <div class="achievement_stats_timestamp">
+                 <div class="achievement_stats_date">12 may</div>
+                 <div class="achievement_stats_year">2016</div>
+               </div>
+               <div class="achievement_stats_data valign truncate">
+                 Man of the match Team Vs Team
+               </div>
+             </div>
+           </div>
+       </li>
+     <li>
+         <div class="col s12">
+           <div class="achievement_stats z-depth-1 valign-wrapper">
+             <div class="achievement_stats_timestamp">
+               <div class="achievement_stats_date">04 jan</div>
+               <div class="achievement_stats_year">2016</div>
+             </div>
+             <div class="achievement_stats_data valign truncate">
+               Highest Runs Tournament Name
+             </div>
+           </div>
+         </div>
+     </li>
+     </div>
+   </ul>
+ </div>
+</div>
+<div id="test4" class="col s12">
+ <div class="row">
+   <div class="col s12">
+   <ul class="cardbox">
+  <h5 class="seg_title">NOW PLAYING FOR</h5>
+  <div class="row">
+
+    <li>
+      <div class="col s6 m4 l2">
+        <a href="#">
+      <div class="team_card z-depth-1">
+        <div class="team_card_dp z-depth-1">
+          <img src="https://lh3.googleusercontent.com/FnT0IoWFRESjFtg4bAkNHkYhw2MSZxOzSlZvkcKmwIOYoGb81TDoPcSinEj-iXdJXYQ=w300" alt="" />
+        </div>
+        <h6 class="truncate">Chennai Super Kings</h6>
+      </div>
+      </a>
+      </div>
+    </li>
+    <li>
+      <div class="col s6 m4 l2">
+        <a href="#">
+      <div class="team_card z-depth-1">
+        <div class="team_card_dp z-depth-1">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/St_Kitts_and_Nevis_Patriots_logo.png" alt="" />
+        </div>
+        <h6 class="truncate">St Kitts & Nevis Patriots</h6>
+      </div>
+      </a>
+      </div>
+    </li>
+      </div>
+</ul>
+</div>
+<div class="col s12">
+<ul class="cardbox">
+<h5 class="seg_title">HAD PLAYED FOR</h5>
+<div class="row">
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="https://pbs.twimg.com/profile_images/378800000329810220/e115c552e38ff57031f0d24e6813904e_400x400.png" alt="" />
+    </div>
+    <h6 class="truncate">Guyana Amazon Warriors</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="http://lccc.assets.s3.amazonaws.com/2014/06/Derbyshire_falcons_2.png" alt="" />
+    </div>
+    <h6 class="truncate">Derbyshire Falcons</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="http://www.tnfcricket.com/assets/files/2015/08/EssexEagles.jpg" alt="" />
+    </div>
+    <h6 class="truncate">Essex Eagles</h6>
+  </div>
+  </a>
+  </div>
+</li>
+<li>
+  <div class="col s6 m4 l2">
+    <a href="#">
+  <div class="team_card z-depth-1">
+    <div class="team_card_dp z-depth-1">
+      <img src="https://lh3.googleusercontent.com/FnT0IoWFRESjFtg4bAkNHkYhw2MSZxOzSlZvkcKmwIOYoGb81TDoPcSinEj-iXdJXYQ=w300" alt="" />
+    </div>
+    <h6 class="truncate">Chennai Super Kings</h6>
+  </div>
+  </a>
+  </div>
+</li>
+
+  </div>
+
+
+
+</ul>
+</div>
+ </div>
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('ul.tabs').tabs();
+
+  $('.uploadbutton').hide();
+  $( '.userinfo' ).hover(function() {
+    $('.uploadbutton').toggle();
+  });
+
+  function image_upload_preview(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.topsegment .parallax-container .parallax img').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#upload_cover_file").change(function(){
+    image_upload_preview(this);
+  });
+  function setdp(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.userinfo_dp').css({
+              'background-image': 'url(' + e.target.result + ')',
+            });
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#set_dp").change(function(){
+    setdp(this);
+  });
+
+  $('.tooltipped').tooltip({delay: 50});
+  $(window).scroll(function(){
+  $(".userinfo").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+</script>

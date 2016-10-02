@@ -25,7 +25,7 @@
 @import "components/buttons";
 @import "components/dropdown";
 // @import "components/waves";
-// @import "components/modal";
+@import "components/modal";
 // @import "components/collapsible";
 // @import "components/chips";
 // @import "components/materialbox";
@@ -35,9 +35,9 @@
 // @import "components/preloader";
 // @import "components/slider";
 // @import "components/carousel";
-// @import "components/date_picker/default";
-// @import "components/date_picker/default.date";
-// @import "components/date_picker/default.time";
+@import "components/date_picker/default";
+@import "components/date_picker/default.date";
+@import "components/date_picker/default.time";
 $white : #F3F1F2;
 // $lighttext : #4F4F4F;
 $lighttext : #FFF;
@@ -135,7 +135,34 @@ a:hover{
   -ms-user-select: none;
   user-select: none;
 }
-
+// login screen
+  .loginbg{
+    background: url('../../../assets/img/loginbg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .dimmer{
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 100%;
+    }
+    .loginbox{
+      width: 20rem;
+      height: 10rem;
+      background: white;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
+  }
+// login screen
 /* line 147, ../sass/materialize.scss */
 .processing:hover {
   box-shadow: none;

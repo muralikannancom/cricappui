@@ -35,7 +35,7 @@
 <div id="signin_modal" class="modal nobg">
   <div class="sign_form">
     <header>
-      Sign Up
+      Sign In
       <div id="close_signin" class="closebutton">
         X
       </div>
@@ -44,7 +44,7 @@
       <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input id="first_name" type="text" class="validate">
           <label for="first_name">Username</label>
         </div>
@@ -131,6 +131,9 @@ $('#signin_modal').closeModal();
 $('#close_signup').click(function(){
 $('#signup_modal').closeModal();
 });
+// $('.sign_form').is(":visible"){
+//   $('.loginbg').addClass(".blurbg");
+// }
 
 // var wh = $(document).height();
 // var lh = $('.loginbox').height();

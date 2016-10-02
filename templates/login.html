@@ -1,11 +1,142 @@
 <div class="loginbg">
 <div class="dimmer">
+
   <div class="loginbox">
 
+    <div class="row nomargin login_buttons">
+      <div class="col s12">
+        <div class="loginlogo">
+          {{LOGO}}
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="btn center" id="open_signin_modal">
+          SIGN IN
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="btn center" id="open_signup_modal">
+          SIGN UP
+        </div>
+      </div>
+      <div class="col s12">
+        <div class="center lighttext">
+        ® www.domain.com
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
+
+
+
+</div>
+</div>
+<div id="signin_modal" class="modal nobg">
+  <div class="sign_form">
+    <header>
+      Sign Up
+      <div id="close_signin" class="closebutton">
+        X
+      </div>
+    </header>
+    <section>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Username</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+    </form>
+  </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col s12">
+          <div class="btn">
+            Sign In
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <div id="signup_modal" class="modal nobg">
+    <div class="sign_form">
+      <header>
+        Sign Up
+        <div id="close_signup" class="closebutton">
+          X
+        </div>
+      </header>
+      <section>
+        <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+
+      </form>
+    </div>
+      </section>
+      <footer>
+        <div class="row">
+          <div class="col s12">
+            <div class="btn">
+              Sign Up
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
 <script type="text/javascript">
+$('#open_signin_modal').click(function(){
+$('#signin_modal').openModal();
+});
+$('#open_signup_modal').click(function(){
+$('#signup_modal').openModal();
+});
+$('#close_signin').click(function(){
+$('#signin_modal').closeModal();
+});
+$('#close_signup').click(function(){
+$('#signup_modal').closeModal();
+});
 
+// var wh = $(document).height();
+// var lh = $('.loginbox').height();
+// var fh = (wh/2)-(lh/2);
+// $('.loginbox').css({
+//   "margin-top" : loginbox,
+// });
+// alert("gerer");
 </script>

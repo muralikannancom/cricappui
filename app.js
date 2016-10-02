@@ -46,7 +46,7 @@ app.config(function($routeProvider){
   });
 });
 app.controller("loginController", function($scope){
-
+$scope.LOGO = "Cricket";
 });
 app.controller("navController", function ($scope) {
   $scope.LOGO = "Cricket";

@@ -8143,34 +8143,113 @@ a:hover {
   height: 100%;
 }
 /* line 157, ../sass/materialize.scss */
+.loginbg .loginlogo {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+/* line 162, ../sass/materialize.scss */
 .loginbg .loginbox {
-  width: 20rem;
+  max-width: 40rem;
+  min-width: 10rem;
   height: 10rem;
-  background: white;
   margin: 0 auto;
   margin-top: 15%;
+  cursor: default;
+}
+/* line 171, ../sass/materialize.scss */
+.loginbg .login_buttons {
+  padding: 2rem;
+  text-align: center;
+}
+/* line 174, ../sass/materialize.scss */
+.loginbg .login_buttons .btn, .loginbg .login_buttons .btn-large {
+  background: none;
+  border: 1px solid white;
+  transform: skewX(-10deg);
+}
+/* line 179, ../sass/materialize.scss */
+.loginbg .login_buttons .btn:hover, .loginbg .login_buttons .btn-large:hover {
+  background: #82B1FF;
+  border: none;
+}
+
+/* line 185, ../sass/materialize.scss */
+.nobg {
+  background: none !important;
+}
+
+/* line 188, ../sass/materialize.scss */
+#signin_modal, #signup_modal {
+  overflow: visible;
+  max-width: 40rem;
+}
+
+/* line 196, ../sass/materialize.scss */
+.sign_form header {
+  background: #2879FF;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  transform: skewX(-10deg);
+  margin-left: 2rem;
+  width: 100%;
+}
+/* line 204, ../sass/materialize.scss */
+.sign_form header .closebutton {
+  position: absolute;
+  right: -0.5rem;
+  top: -0.5rem;
+  width: 2rem;
+  line-height: 2rem;
+  height: 2rem;
+  background: white;
+  color: red;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+/* line 219, ../sass/materialize.scss */
+.sign_form section {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: white;
+  transform: skewX(-10deg);
+  z-index: 0;
+}
+/* line 226, ../sass/materialize.scss */
+.sign_form footer {
+  padding: 1rem;
+  text-align: center;
+}
+/* line 229, ../sass/materialize.scss */
+.sign_form footer .btn, .sign_form footer .btn-large {
+  margin: 0 auto;
+  transform: skewX(-10deg);
+  display: block;
+  width: 10rem;
 }
 
 /* line 147, ../sass/materialize.scss */
-/* line 167, ../sass/materialize.scss */
+/* line 242, ../sass/materialize.scss */
 .processing:hover {
   box-shadow: none;
 }
 
 /* line 150, ../sass/materialize.scss */
-/* line 172, ../sass/materialize.scss */
+/* line 247, ../sass/materialize.scss */
 .joined:hover {
   background: red !important;
 }
 
 /* line 153, ../sass/materialize.scss */
-/* line 177, ../sass/materialize.scss */
+/* line 252, ../sass/materialize.scss */
 .editbg {
   filter: blur(0.8rem);
   -webkit-filter: blur(0.8rem);
 }
 
-/* line 181, ../sass/materialize.scss */
+/* line 256, ../sass/materialize.scss */
 .topsegment {
   position: fixed;
   left: 0;
@@ -8182,7 +8261,7 @@ a:hover {
   z-index: -1;
   transition: all 0.5s ease 0.1s;
 }
-/* line 192, ../sass/materialize.scss */
+/* line 267, ../sass/materialize.scss */
 .topsegment .dimmer {
   width: 100%;
   height: 100%;
@@ -8191,12 +8270,12 @@ a:hover {
   top: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-/* line 200, ../sass/materialize.scss */
+/* line 275, ../sass/materialize.scss */
 .topsegment .parallax-container {
   height: 100% !important;
 }
 
-/* line 208, ../sass/materialize.scss */
+/* line 283, ../sass/materialize.scss */
 .username_disp_desktop {
   color: #FFF;
   text-align: right;
@@ -8205,7 +8284,7 @@ a:hover {
 }
 
 /* line 193, ../sass/materialize.scss */
-/* line 215, ../sass/materialize.scss */
+/* line 290, ../sass/materialize.scss */
 .username_disp_desktop h6 {
   max-width: 15rem;
   position: absolute;
@@ -8217,7 +8296,7 @@ a:hover {
   transition: all 0.1s linear 0.1s;
 }
 
-/* line 225, ../sass/materialize.scss */
+/* line 300, ../sass/materialize.scss */
 .profile_dp_box {
   position: relative;
   margin-right: 2rem;
@@ -8226,13 +8305,13 @@ a:hover {
   padding: 0 !important;
   transform: skewX(-10deg);
 }
-/* line 232, ../sass/materialize.scss */
+/* line 307, ../sass/materialize.scss */
 .profile_dp_box ul {
   margin-right: 2rem;
   margin-top: 0.5rem;
 }
 
-/* line 237, ../sass/materialize.scss */
+/* line 312, ../sass/materialize.scss */
 .profile_dp {
   width: 5rem !important;
   height: 5rem !important;
@@ -8242,63 +8321,63 @@ a:hover {
   background-size: cover;
   cursor: pointer;
 }
-/* line 250, ../sass/materialize.scss */
+/* line 325, ../sass/materialize.scss */
 .profile_dp ul {
   width: auto;
   margin-right: 0rem;
   padding-right: 1rem;
   margin-top: 0.5rem;
 }
-/* line 256, ../sass/materialize.scss */
+/* line 331, ../sass/materialize.scss */
 .profile_dp img {
   height: 100%;
   transform: skewX(10deg);
   margin-left: -10%;
 }
 
-/* line 262, ../sass/materialize.scss */
+/* line 337, ../sass/materialize.scss */
 .profile_dp_box:hover + .username_disp_desktop h6 {
   right: 5rem;
   width: 0rem;
   transition: all 0.1s linear 0.1s;
 }
 
-/* line 270, ../sass/materialize.scss */
+/* line 345, ../sass/materialize.scss */
 .font_color {
   color: #FFF;
 }
 
-/* line 273, ../sass/materialize.scss */
+/* line 348, ../sass/materialize.scss */
 .menu_icon {
   padding: 2rem;
 }
 
-/* line 276, ../sass/materialize.scss */
+/* line 351, ../sass/materialize.scss */
 .menubar {
   background: rgba(130, 177, 255, 0.8) !important;
 }
-/* line 279, ../sass/materialize.scss */
+/* line 354, ../sass/materialize.scss */
 .menubar .menubar_header {
   height: auto;
   padding: 1rem;
 }
-/* line 283, ../sass/materialize.scss */
+/* line 358, ../sass/materialize.scss */
 .menubar .menubar_header .mobile_profile_dp_box {
   margin: 0 auto;
 }
-/* line 285, ../sass/materialize.scss */
+/* line 360, ../sass/materialize.scss */
 .menubar .menubar_header .mobile_profile_dp_box .profile_dp {
   margin: 0 auto;
   border: .2rem dotted #FFF;
   overflow: hidden;
   transform: skewX(-10deg);
 }
-/* line 291, ../sass/materialize.scss */
+/* line 366, ../sass/materialize.scss */
 .menubar .menubar_header .mobile_profile_dp_box .userinfo_info {
   color: white;
   text-align: center;
 }
-/* line 298, ../sass/materialize.scss */
+/* line 373, ../sass/materialize.scss */
 .menubar li a {
   color: white !important;
   text-align: right;
@@ -8306,7 +8385,7 @@ a:hover {
   vertical-align: super;
 }
 
-/* line 308, ../sass/materialize.scss */
+/* line 383, ../sass/materialize.scss */
 .navbar {
   width: 100%;
   height: inherit;
@@ -8315,7 +8394,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 317, ../sass/materialize.scss */
+/* line 392, ../sass/materialize.scss */
 .logo {
   text-align: center;
   color: #F3F1F2;
@@ -8323,7 +8402,7 @@ a:hover {
   display: grid;
 }
 
-/* line 326, ../sass/materialize.scss */
+/* line 401, ../sass/materialize.scss */
 .username_disp_desktop h6 {
   max-width: 15rem;
   position: absolute;
@@ -8335,19 +8414,19 @@ a:hover {
   transition: all 0.1s linear 0.1s;
 }
 
-/* line 339, ../sass/materialize.scss */
+/* line 414, ../sass/materialize.scss */
 .add_fab .fixed-action-btn .btn-floating {
   background: white;
 }
-/* line 341, ../sass/materialize.scss */
+/* line 416, ../sass/materialize.scss */
 .add_fab .fixed-action-btn .btn-floating i {
   color: #2879FF;
 }
-/* line 346, ../sass/materialize.scss */
+/* line 421, ../sass/materialize.scss */
 .add_fab .add_fab_ul {
   overflow: visible;
 }
-/* line 350, ../sass/materialize.scss */
+/* line 425, ../sass/materialize.scss */
 .add_fab .add_fab_ul .addfab_item {
   width: 13rem !important;
   line-height: 0.5rem;
@@ -8359,13 +8438,13 @@ a:hover {
   background: #82B1FF;
 }
 
-/* line 362, ../sass/materialize.scss */
+/* line 437, ../sass/materialize.scss */
 .userinfo {
   height: 20rem;
   width: 100%;
   position: relative;
 }
-/* line 366, ../sass/materialize.scss */
+/* line 441, ../sass/materialize.scss */
 .userinfo .userinfo_dp {
   width: 7rem;
   height: 7rem;
@@ -8375,56 +8454,56 @@ a:hover {
   transform: skewX(-20deg);
   animation: borderanime 1s infinity;
 }
-/* line 376, ../sass/materialize.scss */
+/* line 451, ../sass/materialize.scss */
 .userinfo .userinfo_dp img {
   max-height: 100%;
   margin-left: -30%;
   transform: skewX(20deg);
 }
-/* line 385, ../sass/materialize.scss */
+/* line 460, ../sass/materialize.scss */
 .userinfo .userinfo_info {
   color: white;
   text-align: center;
 }
-/* line 389, ../sass/materialize.scss */
+/* line 464, ../sass/materialize.scss */
 .userinfo .upload_cover_button {
   position: absolute;
   right: 2rem;
   bottom: 2rem;
   z-index: 10 !important;
 }
-/* line 396, ../sass/materialize.scss */
+/* line 471, ../sass/materialize.scss */
 .userinfo .upload_cover_button form .file-field .uploadbutton {
   background: none !important;
   box-shadow: none !important;
   padding: 0 !important;
 }
-/* line 402, ../sass/materialize.scss */
+/* line 477, ../sass/materialize.scss */
 .userinfo .upload_cover_button form .file-field .file-path-wrapper input {
   display: none;
 }
 
-/* line 410, ../sass/materialize.scss */
+/* line 485, ../sass/materialize.scss */
 .internal_navbar {
   background: none !important;
 }
-/* line 412, ../sass/materialize.scss */
+/* line 487, ../sass/materialize.scss */
 .internal_navbar a {
   color: #FFF !important;
   font-size: small;
 }
 
-/* line 419, ../sass/materialize.scss */
+/* line 494, ../sass/materialize.scss */
 .card {
   animation: content_load_anime 1s;
 }
 
-/* line 425, ../sass/materialize.scss */
+/* line 500, ../sass/materialize.scss */
 .seg_title {
   color: #FFF;
 }
 
-/* line 432, ../sass/materialize.scss */
+/* line 507, ../sass/materialize.scss */
 .table_seg_title {
   color: #FFF;
   background: #2879FF;
@@ -8432,7 +8511,7 @@ a:hover {
   padding: 1rem;
 }
 
-/* line 438, ../sass/materialize.scss */
+/* line 513, ../sass/materialize.scss */
 .stats {
   padding: 1rem;
   background: rgba(130, 177, 255, 0.9);
@@ -8440,20 +8519,20 @@ a:hover {
   margin-bottom: 1rem;
   animation: load_anime 1s;
 }
-/* line 444, ../sass/materialize.scss */
+/* line 519, ../sass/materialize.scss */
 .stats h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   animation: statsanime 1s;
 }
-/* line 449, ../sass/materialize.scss */
+/* line 524, ../sass/materialize.scss */
 .stats h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   animation: statsanime 1s;
 }
 
-/* line 455, ../sass/materialize.scss */
+/* line 530, ../sass/materialize.scss */
 .stats_card {
   background: #FFF;
   color: #000;
@@ -8461,49 +8540,49 @@ a:hover {
   animation: load_anime 1s;
 }
 
-/* line 462, ../sass/materialize.scss */
+/* line 537, ../sass/materialize.scss */
 .stats_data {
   color: white;
 }
 
-/* line 467, ../sass/materialize.scss */
+/* line 542, ../sass/materialize.scss */
 table {
   color: #2879FF !important;
   padding: 0rem !important;
 }
-/* line 470, ../sass/materialize.scss */
+/* line 545, ../sass/materialize.scss */
 table thead {
   background: #82B1FF;
   color: #FFF;
 }
-/* line 473, ../sass/materialize.scss */
+/* line 548, ../sass/materialize.scss */
 table thead tr {
   padding: 1rem;
 }
-/* line 475, ../sass/materialize.scss */
+/* line 550, ../sass/materialize.scss */
 table thead tr th {
   padding: 1rem;
 }
-/* line 481, ../sass/materialize.scss */
+/* line 556, ../sass/materialize.scss */
 table tbody tr {
   padding: 1rem;
 }
-/* line 483, ../sass/materialize.scss */
+/* line 558, ../sass/materialize.scss */
 table tbody tr td {
   padding: 1rem;
 }
 
-/* line 489, ../sass/materialize.scss */
+/* line 564, ../sass/materialize.scss */
 .cardbox {
   color: #FFF;
 }
 
-/* line 495, ../sass/materialize.scss */
+/* line 570, ../sass/materialize.scss */
 .cardbox li .col {
   padding: .75rem !important;
 }
 
-/* line 500, ../sass/materialize.scss */
+/* line 575, ../sass/materialize.scss */
 .team_card {
   text-align: center;
   animation: load_anime 1s;
@@ -8512,7 +8591,7 @@ table tbody tr td {
   overflow: hidden;
   padding: 1rem;
 }
-/* line 509, ../sass/materialize.scss */
+/* line 584, ../sass/materialize.scss */
 .team_card .edit_item {
   position: absolute;
   right: 0;
@@ -8521,7 +8600,7 @@ table tbody tr td {
   padding-right: 1rem;
   cursor: pointer;
 }
-/* line 517, ../sass/materialize.scss */
+/* line 592, ../sass/materialize.scss */
 .team_card .team_card_dp {
   width: 4rem;
   height: 4rem;
@@ -8530,18 +8609,18 @@ table tbody tr td {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 524, ../sass/materialize.scss */
+/* line 599, ../sass/materialize.scss */
 .team_card .team_card_dp img {
   height: 100%;
 }
-/* line 528, ../sass/materialize.scss */
+/* line 603, ../sass/materialize.scss */
 .team_card h6 {
   word-break: break-all;
   max-height: 2rem;
   overflow: hidden;
 }
 
-/* line 534, ../sass/materialize.scss */
+/* line 609, ../sass/materialize.scss */
 .achievement_stats {
   background: white;
   color: #2879FF;
@@ -8551,7 +8630,7 @@ table tbody tr td {
   border-radius: .2rem;
   vertical-align: middle;
 }
-/* line 543, ../sass/materialize.scss */
+/* line 618, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_timestamp {
   min-width: 7rem;
   background: #2879FF;
@@ -8559,23 +8638,23 @@ table tbody tr td {
   float: left;
   text-align: center;
 }
-/* line 553, ../sass/materialize.scss */
+/* line 628, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_timestamp .achievement_stats_date {
   background: #82B1FF;
   padding: 0.4rem;
 }
-/* line 557, ../sass/materialize.scss */
+/* line 632, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_timestamp .achievement_stats_year {
   padding: 0.85rem;
 }
-/* line 561, ../sass/materialize.scss */
+/* line 636, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_data {
   float: left;
   min-width: 7rem;
   padding-left: 1rem;
 }
 
-/* line 568, ../sass/materialize.scss */
+/* line 643, ../sass/materialize.scss */
 .team_match_card {
   padding: 1rem;
   color: white;
@@ -8583,7 +8662,7 @@ table tbody tr td {
   position: relative;
 }
 
-/* line 575, ../sass/materialize.scss */
+/* line 650, ../sass/materialize.scss */
 .team_match_card_date {
   background: rgba(130, 177, 255, 0.9);
   color: white;
@@ -8591,7 +8670,7 @@ table tbody tr td {
   border-radius: .2rem;
 }
 
-/* line 581, ../sass/materialize.scss */
+/* line 656, ../sass/materialize.scss */
 .match_card {
   background: rgba(130, 177, 255, 0.9);
   border-radius: .2rem;
@@ -8600,7 +8679,7 @@ table tbody tr td {
 }
 
 /* line 576, ../sass/materialize.scss */
-/* line 588, ../sass/materialize.scss */
+/* line 663, ../sass/materialize.scss */
 .match_card .edit_item {
   position: absolute;
   right: 0;
@@ -8611,7 +8690,7 @@ table tbody tr td {
 }
 
 /* line 586, ../sass/materialize.scss */
-/* line 597, ../sass/materialize.scss */
+/* line 672, ../sass/materialize.scss */
 .match_card .row .col .team_card {
   background: none;
   padding: 1rem;
@@ -8619,14 +8698,14 @@ table tbody tr td {
 }
 
 /* line 593, ../sass/materialize.scss */
-/* line 603, ../sass/materialize.scss */
+/* line 678, ../sass/materialize.scss */
 .match_card .row .col .match_card_details {
   background: #2879ff;
   padding: 1rem;
   border-radius: inherit;
 }
 
-/* line 608, ../sass/materialize.scss */
+/* line 683, ../sass/materialize.scss */
 .match_date {
   width: 5rem;
   height: 6rem;
@@ -8641,20 +8720,20 @@ table tbody tr td {
   z-index: 10;
   color: #2879FF;
 }
-/* line 622, ../sass/materialize.scss */
+/* line 697, ../sass/materialize.scss */
 .match_date .match_date_date {
   background: white;
   color: #2879FF;
   border-radius: inherit;
 }
-/* line 627, ../sass/materialize.scss */
+/* line 702, ../sass/materialize.scss */
 .match_date .match_date_year {
   background: #2879FF;
   color: white;
   border-radius: inherit;
 }
 
-/* line 633, ../sass/materialize.scss */
+/* line 708, ../sass/materialize.scss */
 .team_squad_card {
   background: rgba(130, 177, 255, 0.9);
   text-align: center;
@@ -8663,7 +8742,7 @@ table tbody tr td {
   border-radius: .2rem;
   animation: load_anime 1s;
 }
-/* line 640, ../sass/materialize.scss */
+/* line 715, ../sass/materialize.scss */
 .team_squad_card .team_squad_card_dp {
   width: 4rem;
   height: 4rem;
@@ -8671,12 +8750,12 @@ table tbody tr td {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 646, ../sass/materialize.scss */
+/* line 721, ../sass/materialize.scss */
 .team_squad_card .team_squad_card_dp img {
   max-height: 100%;
 }
 
-/* line 651, ../sass/materialize.scss */
+/* line 726, ../sass/materialize.scss */
 .leaderboard_stats_card .leaderboard_stats_card_dp {
   width: 8rem;
   height: 8rem;
@@ -8688,13 +8767,13 @@ table tbody tr td {
 }
 
 /* line 664, ../sass/materialize.scss */
-/* line 661, ../sass/materialize.scss */
+/* line 736, ../sass/materialize.scss */
 .leaderboard_stats_card .leaderboard_stats_card_dp img {
   height: 100%;
 }
 
 /* line 669, ../sass/materialize.scss */
-/* line 666, ../sass/materialize.scss */
+/* line 741, ../sass/materialize.scss */
 .internal_tabs {
   background: none;
   border: 1px solid #2879FF;
@@ -8702,20 +8781,20 @@ table tbody tr td {
 }
 
 /* line 673, ../sass/materialize.scss */
-/* line 672, ../sass/materialize.scss */
+/* line 747, ../sass/materialize.scss */
 .internal_tabs .active {
   background: #2879FF;
   color: #FFF;
 }
 
 /* line 677, ../sass/materialize.scss */
-/* line 677, ../sass/materialize.scss */
+/* line 752, ../sass/materialize.scss */
 .internal_tabs .indicator {
   background: none;
 }
 
 /* line 682, ../sass/materialize.scss */
-/* line 682, ../sass/materialize.scss */
+/* line 757, ../sass/materialize.scss */
 .editsheet {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -8727,7 +8806,7 @@ table tbody tr td {
 }
 
 /* line 687, ../sass/materialize.scss */
-/* line 692, ../sass/materialize.scss */
+/* line 767, ../sass/materialize.scss */
 .editsheet .editheader {
   padding: 1rem;
   background: rgba(130, 177, 255, 0.5);
@@ -8736,14 +8815,14 @@ table tbody tr td {
 }
 
 /* line 693, ../sass/materialize.scss */
-/* line 699, ../sass/materialize.scss */
+/* line 774, ../sass/materialize.scss */
 .editsheet .editform {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.9);
 }
 
 /* line 698, ../sass/materialize.scss */
-/* line 705, ../sass/materialize.scss */
+/* line 780, ../sass/materialize.scss */
 .createtournament_logo, .createteam_logo {
   width: 7rem;
   height: 7rem;
@@ -8755,7 +8834,7 @@ table tbody tr td {
 }
 
 /* line 713, ../sass/materialize.scss */
-/* line 716, ../sass/materialize.scss */
+/* line 791, ../sass/materialize.scss */
 .settournamentlogo, .setteamlogo, .setdp {
   background: none !important;
   box-shadow: none !important;
@@ -8775,19 +8854,19 @@ table tbody tr td {
 }
 
 /* line 731, ../sass/materialize.scss */
-/* line 734, ../sass/materialize.scss */
+/* line 809, ../sass/materialize.scss */
 .settournamentlogo span i, .setteamlogo span i, .setdp span i {
   color: #FFF;
 }
 
 /* line 737, ../sass/materialize.scss */
-/* line 739, ../sass/materialize.scss */
+/* line 814, ../sass/materialize.scss */
 .createtournament_filepath input, .createteam_filepath input, .setdp_filepath input {
   visibility: hidden;
 }
 
 /* line 741, ../sass/materialize.scss */
-/* line 744, ../sass/materialize.scss */
+/* line 819, ../sass/materialize.scss */
 .addbtn {
   text-align: center;
   color: #FFF;
@@ -8800,7 +8879,7 @@ table tbody tr td {
 }
 
 /* line 751, ../sass/materialize.scss */
-/* line 756, ../sass/materialize.scss */
+/* line 831, ../sass/materialize.scss */
 .createmodal {
   background: #FFF;
   overflow-x: hidden;
@@ -8808,7 +8887,7 @@ table tbody tr td {
 }
 
 /* line 756, ../sass/materialize.scss */
-/* line 762, ../sass/materialize.scss */
+/* line 837, ../sass/materialize.scss */
 .createmodal h5 {
   background: #82B1FF;
   color: #FFF;
@@ -8818,7 +8897,7 @@ table tbody tr td {
 }
 
 /* line 762, ../sass/materialize.scss */
-/* line 770, ../sass/materialize.scss */
+/* line 845, ../sass/materialize.scss */
 .createmodal h5 .modalclose {
   position: absolute;
   right: 0;
@@ -8828,19 +8907,19 @@ table tbody tr td {
 }
 
 /* line 771, ../sass/materialize.scss */
-/* line 778, ../sass/materialize.scss */
+/* line 853, ../sass/materialize.scss */
 .createmodal .createmodal_form {
   padding: 2rem;
 }
 
 /* line 779, ../sass/materialize.scss */
-/* line 783, ../sass/materialize.scss */
+/* line 858, ../sass/materialize.scss */
 #Set_date {
   padding-left: 4rem;
 }
 
 /* line 782, ../sass/materialize.scss */
-/* line 788, ../sass/materialize.scss */
+/* line 863, ../sass/materialize.scss */
 .edit_item {
   position: absolute;
   right: 0;
@@ -8850,7 +8929,7 @@ table tbody tr td {
 }
 
 /* line 796, ../sass/materialize.scss */
-/* line 797, ../sass/materialize.scss */
+/* line 872, ../sass/materialize.scss */
 .modalbuttongroup {
   position: absolute;
   bottom: 0;
@@ -8859,7 +8938,7 @@ table tbody tr td {
 }
 
 /* line 803, ../sass/materialize.scss */
-/* line 804, ../sass/materialize.scss */
+/* line 879, ../sass/materialize.scss */
 .modalbuttongroup a {
   float: left;
   width: 50%;
@@ -8867,13 +8946,13 @@ table tbody tr td {
 }
 
 /* line 809, ../sass/materialize.scss */
-/* line 811, ../sass/materialize.scss */
+/* line 886, ../sass/materialize.scss */
 .search {
   color: #000;
 }
 
 /* line 812, ../sass/materialize.scss */
-/* line 816, ../sass/materialize.scss */
+/* line 891, ../sass/materialize.scss */
 .searchresultsbox {
   color: #000;
   margin-top: -4rem;
@@ -8886,37 +8965,37 @@ table tbody tr td {
 }
 
 /* line 825, ../sass/materialize.scss */
-/* line 827, ../sass/materialize.scss */
+/* line 902, ../sass/materialize.scss */
 .searchresultsbox .row .col {
   padding: 0rem !important;
 }
 
 /* line 829, ../sass/materialize.scss */
-/* line 831, ../sass/materialize.scss */
+/* line 906, ../sass/materialize.scss */
 .searchresultsbox ul {
   padding: 0rem !important;
 }
 
 /* line 831, ../sass/materialize.scss */
-/* line 835, ../sass/materialize.scss */
+/* line 910, ../sass/materialize.scss */
 .searchresultsbox ul li {
   margin: 0rem;
   padding: 0.5rem;
 }
 
 /* line 835, ../sass/materialize.scss */
-/* line 840, ../sass/materialize.scss */
+/* line 915, ../sass/materialize.scss */
 .searchresultsbox ul li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 847, ../sass/materialize.scss */
+  /* line 922, ../sass/materialize.scss */
   .logo {
     float: right;
   }
 
-  /* line 853, ../sass/materialize.scss */
+  /* line 928, ../sass/materialize.scss */
   .userinfo {
     height: 17rem;
   }

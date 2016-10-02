@@ -2,8 +2,8 @@ var app = angular.module('cricapp', ['ngRoute']);
 app.config(function($routeProvider){
   $routeProvider
   .when('/',{
-    templateUrl:'templates/userprofile.html',
-    controller:'profileController'
+    templateUrl:'templates/login.html',
+    controller:'loginController'
   })
   .when('/profile',{
     templateUrl:'templates/userprofile.html',
@@ -44,6 +44,9 @@ app.config(function($routeProvider){
   .otherwise({
     redirectTo:'/'
   });
+});
+app.controller("loginController", function($scope){
+
 });
 app.controller("navController", function ($scope) {
   $scope.LOGO = "Cricket";

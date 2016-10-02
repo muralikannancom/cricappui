@@ -3287,7 +3287,7 @@ ul li {
 }
 
 /* line 77, ../sass/components/_global.scss */
-.z-depth-4, .modal {
+.z-depth-4 {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
 }
 
@@ -5748,220 +5748,6 @@ button.btn-floating {
   line-height: inherit;
 }
 
-/*!
- * Waves v0.6.0
- * http://fian.my.id/Waves
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/Waves/blob/master/LICENSE
- */
-/* line 12, ../sass/components/_waves.scss */
-.waves-effect {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  vertical-align: middle;
-  z-index: 1;
-  will-change: opacity, transform;
-  transition: all .3s ease-out;
-}
-/* line 39, ../sass/components/_waves.scss */
-.waves-effect .waves-ripple {
-  position: absolute;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.2);
-  transition: all 0.7s ease-out;
-  transition-property: transform, opacity;
-  transform: scale(0);
-  pointer-events: none;
-}
-/* line 61, ../sass/components/_waves.scss */
-.waves-effect.waves-light .waves-ripple {
-  background-color: rgba(255, 255, 255, 0.45);
-}
-/* line 65, ../sass/components/_waves.scss */
-.waves-effect.waves-red .waves-ripple {
-  background-color: rgba(244, 67, 54, 0.7);
-}
-/* line 68, ../sass/components/_waves.scss */
-.waves-effect.waves-yellow .waves-ripple {
-  background-color: rgba(255, 235, 59, 0.7);
-}
-/* line 71, ../sass/components/_waves.scss */
-.waves-effect.waves-orange .waves-ripple {
-  background-color: rgba(255, 152, 0, 0.7);
-}
-/* line 74, ../sass/components/_waves.scss */
-.waves-effect.waves-purple .waves-ripple {
-  background-color: rgba(156, 39, 176, 0.7);
-}
-/* line 77, ../sass/components/_waves.scss */
-.waves-effect.waves-green .waves-ripple {
-  background-color: rgba(76, 175, 80, 0.7);
-}
-/* line 80, ../sass/components/_waves.scss */
-.waves-effect.waves-teal .waves-ripple {
-  background-color: rgba(0, 150, 136, 0.7);
-}
-/* line 85, ../sass/components/_waves.scss */
-.waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
-  border: 0;
-  font-style: normal;
-  font-size: inherit;
-  text-transform: inherit;
-  background: none;
-}
-
-/* line 95, ../sass/components/_waves.scss */
-.waves-notransition {
-  transition: none !important;
-}
-
-/* line 99, ../sass/components/_waves.scss */
-.waves-circle {
-  transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
-}
-
-/* line 132, ../sass/components/_waves.scss */
-.waves-input-wrapper {
-  border-radius: 0.2em;
-  vertical-align: bottom;
-}
-/* line 140, ../sass/components/_waves.scss */
-.waves-input-wrapper .waves-button-input {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/* line 148, ../sass/components/_waves.scss */
-.waves-circle {
-  text-align: center;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
-  border-radius: 50%;
-  -webkit-mask-image: none;
-}
-
-/* line 166, ../sass/components/_waves.scss */
-.waves-block {
-  display: block;
-}
-
-/* Firefox Bug: link not triggered */
-/* line 171, ../sass/components/_waves.scss */
-a.waves-effect .waves-ripple {
-  z-index: -1;
-}
-
-/* line 1, ../sass/components/_modal.scss */
-.modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  background-color: #fafafa;
-  padding: 0;
-  max-height: 70%;
-  width: 55%;
-  margin: auto;
-  overflow-y: auto;
-  border-radius: 2px;
-  will-change: top, opacity;
-}
-@media only screen and (max-width: 992px) {
-  /* line 1, ../sass/components/_modal.scss */
-  .modal {
-    width: 80%;
-  }
-}
-/* line 22, ../sass/components/_modal.scss */
-.modal h1, .modal h2, .modal h3, .modal h4 {
-  margin-top: 0;
-}
-/* line 26, ../sass/components/_modal.scss */
-.modal .modal-content {
-  padding: 24px;
-}
-/* line 29, ../sass/components/_modal.scss */
-.modal .modal-close {
-  cursor: pointer;
-}
-/* line 33, ../sass/components/_modal.scss */
-.modal .modal-footer {
-  border-radius: 0 0 2px 2px;
-  background-color: #fafafa;
-  padding: 4px 6px;
-  height: 56px;
-  width: 100%;
-}
-/* line 40, ../sass/components/_modal.scss */
-.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
-  float: right;
-  margin: 6px 0;
-}
-
-/* line 46, ../sass/components/_modal.scss */
-.lean-overlay {
-  position: fixed;
-  z-index: 999;
-  top: -100px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 125%;
-  width: 100%;
-  background: #000;
-  display: none;
-  will-change: opacity;
-}
-
-/* line 62, ../sass/components/_modal.scss */
-.modal.modal-fixed-footer {
-  padding: 0;
-  height: 70%;
-}
-/* line 66, ../sass/components/_modal.scss */
-.modal.modal-fixed-footer .modal-content {
-  position: absolute;
-  height: calc(100% - 56px);
-  max-height: 100%;
-  width: 100%;
-  overflow-y: auto;
-}
-/* line 74, ../sass/components/_modal.scss */
-.modal.modal-fixed-footer .modal-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: 0;
-}
-
-/* line 82, ../sass/components/_modal.scss */
-.modal.bottom-sheet {
-  top: auto;
-  bottom: -100%;
-  margin: 0;
-  width: 100%;
-  max-height: 45%;
-  border-radius: 0;
-  will-change: bottom, opacity;
-}
-
 /* line 2, ../sass/components/forms/_forms.scss */
 select:focus {
   outline: 1px solid white;
@@ -7309,832 +7095,6 @@ input[type=range]:focus::-ms-fill-upper {
   will-change: opacity;
 }
 
-/* ==========================================================================
-   $BASE-PICKER
-   ========================================================================== */
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
-/* line 7, ../sass/components/date_picker/_default.scss */
-.picker {
-  font-size: 16px;
-  text-align: left;
-  line-height: 1.2;
-  color: #000000;
-  position: absolute;
-  z-index: 10000;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/**
- * The picker input element.
- */
-/* line 22, ../sass/components/date_picker/_default.scss */
-.picker__input {
-  cursor: default;
-}
-
-/**
- * When the picker is opened, the input element is "activated".
- */
-/* line 28, ../sass/components/date_picker/_default.scss */
-.picker__input.picker__input--active {
-  border-color: #0089ec;
-}
-
-/**
- * The holder is the only "scrollable" top-level container element.
- */
-/* line 34, ../sass/components/date_picker/_default.scss */
-.picker__holder {
-  width: 100%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/*!
- * Default mobile-first, responsive styling for pickadate.js
- * Demo: http://amsul.github.io/pickadate.js
- */
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
-/**
- * Make the holder and frame fullscreen.
- */
-/* line 50, ../sass/components/date_picker/_default.scss */
-.picker__holder,
-.picker__frame {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-}
-
-/**
- * The holder should overlay the entire screen.
- */
-/* line 60, ../sass/components/date_picker/_default.scss */
-.picker__holder {
-  position: fixed;
-  -webkit-transition: background 0.15s ease-out, top 0s 0.15s;
-  -moz-transition: background 0.15s ease-out, top 0s 0.15s;
-  transition: background 0.15s ease-out, top 0s 0.15s;
-  -webkit-backface-visibility: hidden;
-}
-
-/**
- * The frame that bounds the box contents of the picker.
- */
-/* line 70, ../sass/components/date_picker/_default.scss */
-.picker__frame {
-  position: absolute;
-  margin: 0 auto;
-  min-width: 256px;
-  width: 300px;
-  max-height: 350px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -moz-opacity: 0;
-  opacity: 0;
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-
-@media (min-height: 28.875em) {
-  /* line 88, ../sass/components/date_picker/_default.scss */
-  .picker__frame {
-    overflow: visible;
-    top: auto;
-    bottom: -100%;
-    max-height: 80%;
-  }
-}
-@media (min-height: 40.125em) {
-  /* line 96, ../sass/components/date_picker/_default.scss */
-  .picker__frame {
-    margin-bottom: 7.5%;
-  }
-}
-/**
- * The wrapper sets the stage to vertically align the box contents.
- */
-/* line 103, ../sass/components/date_picker/_default.scss */
-.picker__wrap {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-height: 28.875em) {
-  /* line 109, ../sass/components/date_picker/_default.scss */
-  .picker__wrap {
-    display: block;
-  }
-}
-/**
- * The box contains all the picker contents.
- */
-/* line 116, ../sass/components/date_picker/_default.scss */
-.picker__box {
-  background: #ffffff;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-@media (min-height: 28.875em) {
-  /* line 127, ../sass/components/date_picker/_default.scss */
-  .picker__box {
-    display: block;
-    border: 1px solid #777777;
-    border-top-color: #898989;
-    border-bottom-width: 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: 0 12px 36px 16px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0 12px 36px 16px rgba(0, 0, 0, 0.24);
-    box-shadow: 0 12px 36px 16px rgba(0, 0, 0, 0.24);
-  }
-}
-/**
- * When the picker opens...
- */
-/* line 156, ../sass/components/date_picker/_default.scss */
-.picker--opened .picker__holder {
-  top: 0;
-  background: transparent;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)";
-  zoom: 1;
-  background: rgba(0, 0, 0, 0.32);
-  -webkit-transition: background 0.15s ease-out;
-  -moz-transition: background 0.15s ease-out;
-  transition: background 0.15s ease-out;
-}
-
-/* line 166, ../sass/components/date_picker/_default.scss */
-.picker--opened .picker__frame {
-  top: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  -moz-opacity: 1;
-  opacity: 1;
-}
-
-@media (min-height: 35.875em) {
-  /* line 174, ../sass/components/date_picker/_default.scss */
-  .picker--opened .picker__frame {
-    top: 10%;
-    bottom: auto;
-  }
-}
-/**
- * For `large` screens, transform into an inline picker.
- */
-/* ==========================================================================
-   CUSTOM MATERIALIZE STYLES
-   ========================================================================== */
-/* line 187, ../sass/components/date_picker/_default.scss */
-.picker__input.picker__input--active {
-  border-color: #E3F2FD;
-}
-
-/* line 191, ../sass/components/date_picker/_default.scss */
-.picker__frame {
-  margin: 0 auto;
-  max-width: 325px;
-}
-
-@media (min-height: 38.875em) {
-  /* line 197, ../sass/components/date_picker/_default.scss */
-  .picker--opened .picker__frame {
-    top: 10%;
-    bottom: auto;
-  }
-}
-/* ==========================================================================
-   $BASE-DATE-PICKER
-   ========================================================================== */
-/**
- * The picker box.
- */
-/* line 7, ../sass/components/date_picker/_default.date.scss */
-.picker__box {
-  padding: 0 1em;
-}
-
-/**
- * The header containing the month and year stuff.
- */
-/* line 13, ../sass/components/date_picker/_default.date.scss */
-.picker__header {
-  text-align: center;
-  position: relative;
-  margin-top: .75em;
-}
-
-/**
- * The month and year labels.
- */
-/* line 21, ../sass/components/date_picker/_default.date.scss */
-.picker__month,
-.picker__year {
-  display: inline-block;
-  margin-left: .25em;
-  margin-right: .25em;
-}
-
-/**
- * The month and year selectors.
- */
-/* line 31, ../sass/components/date_picker/_default.date.scss */
-.picker__select--month,
-.picker__select--year {
-  height: 2em;
-  padding: 0;
-  margin-left: .25em;
-  margin-right: .25em;
-}
-
-/* line 41, ../sass/components/date_picker/_default.date.scss */
-.picker__select--month.browser-default {
-  display: inline;
-  background-color: #FFFFFF;
-  width: 40%;
-}
-
-/* line 46, ../sass/components/date_picker/_default.date.scss */
-.picker__select--year.browser-default {
-  display: inline;
-  background-color: #FFFFFF;
-  width: 26%;
-}
-
-/* line 51, ../sass/components/date_picker/_default.date.scss */
-.picker__select--month:focus,
-.picker__select--year:focus {
-  border-color: rgba(0, 0, 0, 0.05);
-}
-
-/**
- * The month navigation buttons.
- */
-/* line 58, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--prev,
-.picker__nav--next {
-  position: absolute;
-  padding: .5em 1.25em;
-  width: 1em;
-  height: 1em;
-  box-sizing: content-box;
-  top: -0.25em;
-}
-
-/* line 73, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--prev {
-  left: -1em;
-  padding-right: 1.25em;
-}
-
-/* line 82, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--next {
-  right: -1em;
-  padding-left: 1.25em;
-}
-
-/* line 92, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--disabled,
-.picker__nav--disabled:hover,
-.picker__nav--disabled:before,
-.picker__nav--disabled:before:hover {
-  cursor: default;
-  background: none;
-  border-right-color: #f5f5f5;
-  border-left-color: #f5f5f5;
-}
-
-/**
- * The calendar table of dates
- */
-/* line 104, ../sass/components/date_picker/_default.date.scss */
-.picker__table {
-  text-align: center;
-  border-collapse: collapse;
-  border-spacing: 0;
-  table-layout: fixed;
-  font-size: 1rem;
-  width: 100%;
-  margin-top: .75em;
-  margin-bottom: .5em;
-}
-
-/* line 117, ../sass/components/date_picker/_default.date.scss */
-.picker__table th, .picker__table td {
-  text-align: center;
-}
-
-/* line 126, ../sass/components/date_picker/_default.date.scss */
-.picker__table td {
-  margin: 0;
-  padding: 0;
-}
-
-/**
- * The weekday labels
- */
-/* line 133, ../sass/components/date_picker/_default.date.scss */
-.picker__weekday {
-  width: 14.285714286%;
-  font-size: .75em;
-  padding-bottom: .25em;
-  color: #999999;
-  font-weight: 500;
-  /* Increase the spacing a tad */
-}
-
-@media (min-height: 33.875em) {
-  /* line 142, ../sass/components/date_picker/_default.date.scss */
-  .picker__weekday {
-    padding-bottom: .5em;
-  }
-}
-/**
- * The days on the calendar
- */
-/* line 150, ../sass/components/date_picker/_default.date.scss */
-.picker__day--today {
-  position: relative;
-  color: #595959;
-  letter-spacing: -.3;
-  padding: .75rem 0;
-  font-weight: 400;
-  border: 1px solid transparent;
-}
-
-/* line 170, ../sass/components/date_picker/_default.date.scss */
-.picker__day--disabled:before {
-  border-top-color: #aaaaaa;
-}
-
-/* line 175, ../sass/components/date_picker/_default.date.scss */
-.picker__day--infocus:hover {
-  cursor: pointer;
-  color: #000;
-  font-weight: 500;
-}
-
-/* line 181, ../sass/components/date_picker/_default.date.scss */
-.picker__day--outfocus {
-  display: none;
-  padding: .75rem 0;
-  color: #fff;
-}
-
-/* line 187, ../sass/components/date_picker/_default.date.scss */
-.picker__day--outfocus:hover {
-  cursor: pointer;
-  color: #dddddd;
-  font-weight: 500;
-}
-
-/* line 198, ../sass/components/date_picker/_default.date.scss */
-.picker__day--highlighted:hover,
-.picker--focused .picker__day--highlighted {
-  cursor: pointer;
-}
-
-/* line 205, ../sass/components/date_picker/_default.date.scss */
-.picker__day--selected,
-.picker__day--selected:hover,
-.picker--focused .picker__day--selected {
-  border-radius: 50%;
-  transform: scale(0.75);
-  background: #0089ec;
-  color: #ffffff;
-}
-
-/* line 216, ../sass/components/date_picker/_default.date.scss */
-.picker__day--disabled,
-.picker__day--disabled:hover,
-.picker--focused .picker__day--disabled {
-  background: #f5f5f5;
-  border-color: #f5f5f5;
-  color: #dddddd;
-  cursor: default;
-}
-
-/* line 224, ../sass/components/date_picker/_default.date.scss */
-.picker__day--highlighted.picker__day--disabled,
-.picker__day--highlighted.picker__day--disabled:hover {
-  background: #bbbbbb;
-}
-
-/**
- * The footer containing the "today", "clear", and "close" buttons.
- */
-/* line 231, ../sass/components/date_picker/_default.date.scss */
-.picker__footer {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* line 237, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today,
-.picker__button--clear,
-.picker__button--close {
-  border: 1px solid #ffffff;
-  background: #ffffff;
-  font-size: .8em;
-  padding: .66em 0;
-  font-weight: bold;
-  width: 33%;
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-/* line 249, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today:hover,
-.picker__button--clear:hover,
-.picker__button--close:hover {
-  cursor: pointer;
-  color: #000000;
-  background: #b1dcfb;
-  border-bottom-color: #b1dcfb;
-}
-
-/* line 257, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today:focus,
-.picker__button--clear:focus,
-.picker__button--close:focus {
-  background: #b1dcfb;
-  border-color: rgba(0, 0, 0, 0.05);
-  outline: none;
-}
-
-/* line 264, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today:before,
-.picker__button--clear:before,
-.picker__button--close:before {
-  position: relative;
-  display: inline-block;
-  height: 0;
-}
-
-/* line 271, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today:before,
-.picker__button--clear:before {
-  content: " ";
-  margin-right: .45em;
-}
-
-/* line 276, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today:before {
-  top: -0.05em;
-  width: 0;
-  border-top: 0.66em solid #0059bc;
-  border-left: .66em solid transparent;
-}
-
-/* line 282, ../sass/components/date_picker/_default.date.scss */
-.picker__button--clear:before {
-  top: -0.25em;
-  width: .66em;
-  border-top: 3px solid #ee2200;
-}
-
-/* line 287, ../sass/components/date_picker/_default.date.scss */
-.picker__button--close:before {
-  content: "\D7";
-  top: -0.1em;
-  vertical-align: top;
-  font-size: 1.1em;
-  margin-right: .35em;
-  color: #777777;
-}
-
-/* line 295, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today[disabled],
-.picker__button--today[disabled]:hover {
-  background: #f5f5f5;
-  border-color: #f5f5f5;
-  color: #dddddd;
-  cursor: default;
-}
-
-/* line 302, ../sass/components/date_picker/_default.date.scss */
-.picker__button--today[disabled]:before {
-  border-top-color: #aaaaaa;
-}
-
-/* ==========================================================================
-   CUSTOM MATERIALIZE STYLES
-   ========================================================================== */
-/* line 309, ../sass/components/date_picker/_default.date.scss */
-.picker__box {
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-/* line 314, ../sass/components/date_picker/_default.date.scss */
-.picker__date-display {
-  text-align: center;
-  background-color: #82B1FF;
-  color: #fff;
-  padding-bottom: 15px;
-  font-weight: 300;
-}
-
-/* line 322, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--prev:hover,
-.picker__nav--next:hover {
-  cursor: pointer;
-  color: #000000;
-  background: white;
-}
-
-/* line 329, ../sass/components/date_picker/_default.date.scss */
-.picker__weekday-display {
-  background-color: #5e9bff;
-  padding: 10px;
-  font-weight: 200;
-  letter-spacing: .5;
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-/* line 338, ../sass/components/date_picker/_default.date.scss */
-.picker__month-display {
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
-/* line 342, ../sass/components/date_picker/_default.date.scss */
-.picker__day-display {
-  font-size: 4.5rem;
-  font-weight: 400;
-}
-
-/* line 347, ../sass/components/date_picker/_default.date.scss */
-.picker__year-display {
-  font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-/* line 352, ../sass/components/date_picker/_default.date.scss */
-.picker__box {
-  padding: 0;
-}
-
-/* line 355, ../sass/components/date_picker/_default.date.scss */
-.picker__calendar-container {
-  padding: 0 1rem;
-}
-/* line 358, ../sass/components/date_picker/_default.date.scss */
-.picker__calendar-container thead {
-  border: none;
-}
-
-/* line 364, ../sass/components/date_picker/_default.date.scss */
-.picker__table {
-  margin-top: 0;
-  margin-bottom: .5em;
-}
-
-/* line 369, ../sass/components/date_picker/_default.date.scss */
-.picker__day--infocus {
-  color: #595959;
-  letter-spacing: -.3;
-  padding: .75rem 0;
-  font-weight: 400;
-  border: 1px solid transparent;
-}
-
-/* line 378, ../sass/components/date_picker/_default.date.scss */
-.picker__day.picker__day--today {
-  color: #82B1FF;
-}
-
-/* line 382, ../sass/components/date_picker/_default.date.scss */
-.picker__day.picker__day--today.picker__day--selected {
-  color: #fff;
-}
-
-/* line 387, ../sass/components/date_picker/_default.date.scss */
-.picker__weekday {
-  font-size: .9rem;
-}
-
-/* line 392, ../sass/components/date_picker/_default.date.scss */
-.picker__day--selected,
-.picker__day--selected:hover,
-.picker--focused .picker__day--selected {
-  border-radius: 50%;
-  transform: scale(0.9);
-  background-color: #82B1FF;
-  color: #ffffff;
-}
-/* line 399, ../sass/components/date_picker/_default.date.scss */
-.picker__day--selected.picker__day--outfocus,
-.picker__day--selected:hover.picker__day--outfocus,
-.picker--focused .picker__day--selected.picker__day--outfocus {
-  background-color: white;
-}
-
-/* line 405, ../sass/components/date_picker/_default.date.scss */
-.picker__footer {
-  text-align: right;
-  padding: 5px 10px;
-}
-
-/* line 411, ../sass/components/date_picker/_default.date.scss */
-.picker__close, .picker__today {
-  font-size: 1.1rem;
-  padding: 0 1rem;
-  color: #82B1FF;
-}
-
-/* line 418, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--prev:before,
-.picker__nav--next:before {
-  content: " ";
-  border-top: .5em solid transparent;
-  border-bottom: .5em solid transparent;
-  border-right: 0.75em solid #676767;
-  width: 0;
-  height: 0;
-  display: block;
-  margin: 0 auto;
-}
-
-/* line 429, ../sass/components/date_picker/_default.date.scss */
-.picker__nav--next:before {
-  border-right: 0;
-  border-left: 0.75em solid #676767;
-}
-
-/* line 433, ../sass/components/date_picker/_default.date.scss */
-button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
-  background-color: white;
-}
-
-/* ==========================================================================
-   $BASE-TIME-PICKER
-   ========================================================================== */
-/**
- * The list of times.
- */
-/* line 7, ../sass/components/date_picker/_default.time.scss */
-.picker__list {
-  list-style: none;
-  padding: 0.75em 0 4.2em;
-  margin: 0;
-}
-
-/**
- * The times on the clock.
- */
-/* line 15, ../sass/components/date_picker/_default.time.scss */
-.picker__list-item {
-  border-bottom: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-  margin-bottom: -1px;
-  position: relative;
-  background: #ffffff;
-  padding: .75em 1.25em;
-}
-
-@media (min-height: 46.75em) {
-  /* line 24, ../sass/components/date_picker/_default.time.scss */
-  .picker__list-item {
-    padding: .5em 1em;
-  }
-}
-/* Hovered time */
-/* line 29, ../sass/components/date_picker/_default.time.scss */
-.picker__list-item:hover {
-  cursor: pointer;
-  color: #000000;
-  background: #b1dcfb;
-  border-color: #0089ec;
-  z-index: 10;
-}
-
-/* Highlighted and hovered/focused time */
-/* line 37, ../sass/components/date_picker/_default.time.scss */
-.picker__list-item--highlighted {
-  border-color: #0089ec;
-  z-index: 10;
-}
-
-/* line 41, ../sass/components/date_picker/_default.time.scss */
-.picker__list-item--highlighted:hover,
-.picker--focused .picker__list-item--highlighted {
-  cursor: pointer;
-  color: #000000;
-  background: #b1dcfb;
-}
-
-/* Selected and hovered/focused time */
-/* line 48, ../sass/components/date_picker/_default.time.scss */
-.picker__list-item--selected,
-.picker__list-item--selected:hover,
-.picker--focused .picker__list-item--selected {
-  background: #0089ec;
-  color: #ffffff;
-  z-index: 10;
-}
-
-/* Disabled time */
-/* line 56, ../sass/components/date_picker/_default.time.scss */
-.picker__list-item--disabled,
-.picker__list-item--disabled:hover,
-.picker--focused .picker__list-item--disabled {
-  background: #f5f5f5;
-  border-color: #f5f5f5;
-  color: #dddddd;
-  cursor: default;
-  border-color: #dddddd;
-  z-index: auto;
-}
-
-/**
- * The clear button
- */
-/* line 69, ../sass/components/date_picker/_default.time.scss */
-.picker--time .picker__button--clear {
-  display: block;
-  width: 80%;
-  margin: 1em auto 0;
-  padding: 1em 1.25em;
-  background: none;
-  border: 0;
-  font-weight: 500;
-  font-size: .67em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #666;
-}
-
-/* line 82, ../sass/components/date_picker/_default.time.scss */
-.picker--time .picker__button--clear:hover,
-.picker--time .picker__button--clear:focus {
-  color: #000000;
-  background: #b1dcfb;
-  background: #ee2200;
-  border-color: #ee2200;
-  cursor: pointer;
-  color: #ffffff;
-  outline: none;
-}
-
-/* line 92, ../sass/components/date_picker/_default.time.scss */
-.picker--time .picker__button--clear:before {
-  top: -0.25em;
-  color: #666;
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-/* line 98, ../sass/components/date_picker/_default.time.scss */
-.picker--time .picker__button--clear:hover:before,
-.picker--time .picker__button--clear:focus:before {
-  color: #ffffff;
-}
-
-/* ==========================================================================
-   $DEFAULT-TIME-PICKER
-   ========================================================================== */
-/**
- * The frame the bounds the time picker.
- */
-/* line 109, ../sass/components/date_picker/_default.time.scss */
-.picker--time .picker__frame {
-  min-width: 256px;
-  max-width: 320px;
-}
-
-/**
- * The picker box.
- */
-/* line 116, ../sass/components/date_picker/_default.time.scss */
-.picker--time .picker__box {
-  font-size: 1em;
-  background: #f2f2f2;
-  padding: 0;
-}
-
-@media (min-height: 40.125em) {
-  /* line 122, ../sass/components/date_picker/_default.time.scss */
-  .picker--time .picker__box {
-    margin-bottom: 5em;
-  }
-}
 @keyframes content_load_anime {
   0% {
     margin-top: 3rem;
@@ -8194,47 +7154,42 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     border: 2px dashed #FFF;
   }
 }
-/* line 116, ../sass/materialize.scss */
+/* line 106, ../sass/materialize.scss */
 body {
   background: #2879FF;
 }
 
-/* line 120, ../sass/materialize.scss */
+/* line 109, ../sass/materialize.scss */
 a {
   color: #FFF !important;
 }
 
-/* line 123, ../sass/materialize.scss */
+/* line 112, ../sass/materialize.scss */
 a:hover {
   color: #FFF !important;
 }
 
-/* line 126, ../sass/materialize.scss */
-.whitetext {
-  color: #FFF !important;
-}
-
-/* line 129, ../sass/materialize.scss */
+/* line 115, ../sass/materialize.scss */
 .nopad {
   padding: 0rem !important;
 }
 
-/* line 132, ../sass/materialize.scss */
+/* line 118, ../sass/materialize.scss */
 .nomargin {
   margin: 0rem !important;
 }
 
-/* line 135, ../sass/materialize.scss */
+/* line 121, ../sass/materialize.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 138, ../sass/materialize.scss */
+/* line 124, ../sass/materialize.scss */
 .dark {
   color: #000;
 }
 
-/* line 141, ../sass/materialize.scss */
+/* line 127, ../sass/materialize.scss */
 .processing {
   background: rgba(130, 177, 255, 0.6) !important;
   cursor: default;
@@ -8248,22 +7203,25 @@ a:hover {
 }
 
 /* line 147, ../sass/materialize.scss */
+/* line 140, ../sass/materialize.scss */
 .processing:hover {
   box-shadow: none;
 }
 
 /* line 150, ../sass/materialize.scss */
+/* line 145, ../sass/materialize.scss */
 .joined:hover {
   background: red !important;
 }
 
 /* line 153, ../sass/materialize.scss */
+/* line 150, ../sass/materialize.scss */
 .editbg {
   filter: blur(0.8rem);
   -webkit-filter: blur(0.8rem);
 }
 
-/* line 157, ../sass/materialize.scss */
+/* line 154, ../sass/materialize.scss */
 .topsegment {
   position: fixed;
   left: 0;
@@ -8275,7 +7233,7 @@ a:hover {
   z-index: -1;
   transition: all 0.5s ease 0.1s;
 }
-/* line 168, ../sass/materialize.scss */
+/* line 165, ../sass/materialize.scss */
 .topsegment .dimmer {
   width: 100%;
   height: 100%;
@@ -8284,19 +7242,21 @@ a:hover {
   top: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-/* line 176, ../sass/materialize.scss */
+/* line 173, ../sass/materialize.scss */
 .topsegment .parallax-container {
   height: 100% !important;
 }
 
-/* line 187, ../sass/materialize.scss */
+/* line 181, ../sass/materialize.scss */
 .username_disp_desktop {
   color: #FFF;
   text-align: right;
   padding: 1rem;
   z-index: 2 !important;
 }
+
 /* line 193, ../sass/materialize.scss */
+/* line 188, ../sass/materialize.scss */
 .username_disp_desktop h6 {
   max-width: 15rem;
   position: absolute;
@@ -8308,7 +7268,7 @@ a:hover {
   transition: all 0.1s linear 0.1s;
 }
 
-/* line 206, ../sass/materialize.scss */
+/* line 198, ../sass/materialize.scss */
 .profile_dp_box {
   position: relative;
   margin-right: 2rem;
@@ -8316,76 +7276,80 @@ a:hover {
   border: .15rem dotted #FFF;
   padding: 0 !important;
   transform: skewX(-10deg);
-  z-index: 1 !important;
 }
-/* line 217, ../sass/materialize.scss */
+/* line 205, ../sass/materialize.scss */
 .profile_dp_box ul {
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* line 210, ../sass/materialize.scss */
+.profile_dp {
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 0%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+/* line 223, ../sass/materialize.scss */
+.profile_dp ul {
   width: auto;
   margin-right: 0rem;
   padding-right: 1rem;
   margin-top: 0.5rem;
 }
-
-/* line 224, ../sass/materialize.scss */
-.profile_dp_box:hover + .username_disp_desktop h6 {
-  right: 5rem;
-  width: 0rem;
-  transition: all 0.1s linear 0.1s;
-}
-
 /* line 229, ../sass/materialize.scss */
-.profile_dp {
-  width: 5rem !important;
-  height: 5rem !important;
-  border-radius: 0%;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  cursor: pointer;
-}
-/* line 246, ../sass/materialize.scss */
 .profile_dp img {
   height: 100%;
   transform: skewX(10deg);
   margin-left: -10%;
 }
 
-/* line 255, ../sass/materialize.scss */
+/* line 235, ../sass/materialize.scss */
+.profile_dp_box:hover + .username_disp_desktop h6 {
+  right: 5rem;
+  width: 0rem;
+  transition: all 0.1s linear 0.1s;
+}
+
+/* line 243, ../sass/materialize.scss */
 .font_color {
   color: #FFF;
 }
 
-/* line 258, ../sass/materialize.scss */
+/* line 246, ../sass/materialize.scss */
 .menu_icon {
   padding: 2rem;
 }
 
-/* line 261, ../sass/materialize.scss */
+/* line 249, ../sass/materialize.scss */
 .menubar {
   background: rgba(130, 177, 255, 0.8) !important;
 }
-/* line 264, ../sass/materialize.scss */
+/* line 252, ../sass/materialize.scss */
 .menubar .menubar_header {
   height: auto;
   padding: 1rem;
 }
-/* line 268, ../sass/materialize.scss */
+/* line 256, ../sass/materialize.scss */
 .menubar .menubar_header .mobile_profile_dp_box {
   margin: 0 auto;
 }
-/* line 270, ../sass/materialize.scss */
+/* line 258, ../sass/materialize.scss */
 .menubar .menubar_header .mobile_profile_dp_box .profile_dp {
   margin: 0 auto;
   border: .2rem dotted #FFF;
   overflow: hidden;
   transform: skewX(-10deg);
 }
-/* line 276, ../sass/materialize.scss */
+/* line 264, ../sass/materialize.scss */
 .menubar .menubar_header .mobile_profile_dp_box .userinfo_info {
-  color: #FFF;
+  color: white;
   text-align: center;
 }
-/* line 283, ../sass/materialize.scss */
+/* line 271, ../sass/materialize.scss */
 .menubar li a {
   color: white !important;
   text-align: right;
@@ -8393,7 +7357,7 @@ a:hover {
   vertical-align: super;
 }
 
-/* line 293, ../sass/materialize.scss */
+/* line 281, ../sass/materialize.scss */
 .navbar {
   width: 100%;
   height: inherit;
@@ -8402,7 +7366,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 302, ../sass/materialize.scss */
+/* line 290, ../sass/materialize.scss */
 .logo {
   text-align: center;
   color: #F3F1F2;
@@ -8410,9 +7374,21 @@ a:hover {
   display: grid;
 }
 
+/* line 299, ../sass/materialize.scss */
+.username_disp_desktop h6 {
+  max-width: 15rem;
+  position: absolute;
+  right: 8.8rem;
+  top: 2.5rem;
+  background: #2879FF;
+  padding: 0.4rem;
+  transform: skewX(-10deg);
+  transition: all 0.1s linear 0.1s;
+}
+
 /* line 312, ../sass/materialize.scss */
 .add_fab .fixed-action-btn .btn-floating {
-  background: #FFF;
+  background: white;
 }
 /* line 314, ../sass/materialize.scss */
 .add_fab .fixed-action-btn .btn-floating i {
@@ -8422,7 +7398,7 @@ a:hover {
 .add_fab .add_fab_ul {
   overflow: visible;
 }
-/* line 329, ../sass/materialize.scss */
+/* line 323, ../sass/materialize.scss */
 .add_fab .add_fab_ul .addfab_item {
   width: 13rem !important;
   line-height: 0.5rem;
@@ -8431,79 +7407,75 @@ a:hover {
   float: right;
   word-break: keep-all;
   margin: 1rem;
-  background: #2879FF;
+  background: #82B1FF;
 }
 
-/* line 341, ../sass/materialize.scss */
+/* line 335, ../sass/materialize.scss */
 .userinfo {
+  height: 20rem;
   width: 100%;
   position: relative;
 }
-/* line 345, ../sass/materialize.scss */
+/* line 339, ../sass/materialize.scss */
 .userinfo .userinfo_dp {
   width: 7rem;
   height: 7rem;
-  position: relative;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important;
   margin: 0 auto;
   overflow: hidden;
   border: .2rem dotted #FFF;
   transform: skewX(-20deg);
   animation: borderanime 1s infinity;
 }
-/* line 359, ../sass/materialize.scss */
+/* line 349, ../sass/materialize.scss */
 .userinfo .userinfo_dp img {
   max-height: 100%;
   margin-left: -30%;
   transform: skewX(20deg);
 }
-/* line 368, ../sass/materialize.scss */
+/* line 358, ../sass/materialize.scss */
 .userinfo .userinfo_info {
-  color: #FFF;
+  color: white;
   text-align: center;
 }
-/* line 372, ../sass/materialize.scss */
+/* line 362, ../sass/materialize.scss */
 .userinfo .upload_cover_button {
   position: absolute;
   right: 2rem;
   bottom: 2rem;
-  overflow: hidden;
   z-index: 10 !important;
 }
-/* line 380, ../sass/materialize.scss */
+/* line 369, ../sass/materialize.scss */
 .userinfo .upload_cover_button form .file-field .uploadbutton {
   background: none !important;
   box-shadow: none !important;
   padding: 0 !important;
 }
-/* line 386, ../sass/materialize.scss */
+/* line 375, ../sass/materialize.scss */
 .userinfo .upload_cover_button form .file-field .file-path-wrapper input {
   display: none;
 }
 
-/* line 394, ../sass/materialize.scss */
+/* line 383, ../sass/materialize.scss */
 .internal_navbar {
   background: none !important;
 }
-/* line 396, ../sass/materialize.scss */
+/* line 385, ../sass/materialize.scss */
 .internal_navbar a {
   color: #FFF !important;
   font-size: small;
 }
 
-/* line 403, ../sass/materialize.scss */
+/* line 392, ../sass/materialize.scss */
 .card {
   animation: content_load_anime 1s;
 }
 
-/* line 409, ../sass/materialize.scss */
+/* line 398, ../sass/materialize.scss */
 .seg_title {
   color: #FFF;
 }
 
-/* line 416, ../sass/materialize.scss */
+/* line 405, ../sass/materialize.scss */
 .table_seg_title {
   color: #FFF;
   background: #2879FF;
@@ -8511,7 +7483,7 @@ a:hover {
   padding: 1rem;
 }
 
-/* line 425, ../sass/materialize.scss */
+/* line 411, ../sass/materialize.scss */
 .stats {
   padding: 1rem;
   background: rgba(130, 177, 255, 0.9);
@@ -8519,20 +7491,20 @@ a:hover {
   margin-bottom: 1rem;
   animation: load_anime 1s;
 }
-/* line 431, ../sass/materialize.scss */
+/* line 417, ../sass/materialize.scss */
 .stats h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   animation: statsanime 1s;
 }
-/* line 436, ../sass/materialize.scss */
+/* line 422, ../sass/materialize.scss */
 .stats h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   animation: statsanime 1s;
 }
 
-/* line 442, ../sass/materialize.scss */
+/* line 428, ../sass/materialize.scss */
 .stats_card {
   background: #FFF;
   color: #000;
@@ -8540,49 +7512,49 @@ a:hover {
   animation: load_anime 1s;
 }
 
-/* line 449, ../sass/materialize.scss */
+/* line 435, ../sass/materialize.scss */
 .stats_data {
-  color: #FFF;
+  color: white;
 }
 
-/* line 454, ../sass/materialize.scss */
+/* line 440, ../sass/materialize.scss */
 table {
-  color: #000 !important;
+  color: #2879FF !important;
   padding: 0rem !important;
 }
-/* line 457, ../sass/materialize.scss */
+/* line 443, ../sass/materialize.scss */
 table thead {
   background: #82B1FF;
   color: #FFF;
 }
-/* line 460, ../sass/materialize.scss */
+/* line 446, ../sass/materialize.scss */
 table thead tr {
   padding: 1rem;
 }
-/* line 462, ../sass/materialize.scss */
+/* line 448, ../sass/materialize.scss */
 table thead tr th {
   padding: 1rem;
 }
-/* line 468, ../sass/materialize.scss */
+/* line 454, ../sass/materialize.scss */
 table tbody tr {
   padding: 1rem;
 }
-/* line 470, ../sass/materialize.scss */
+/* line 456, ../sass/materialize.scss */
 table tbody tr td {
   padding: 1rem;
 }
 
-/* line 476, ../sass/materialize.scss */
+/* line 462, ../sass/materialize.scss */
 .cardbox {
   color: #FFF;
 }
 
-/* line 482, ../sass/materialize.scss */
+/* line 468, ../sass/materialize.scss */
 .cardbox li .col {
   padding: .75rem !important;
 }
 
-/* line 487, ../sass/materialize.scss */
+/* line 473, ../sass/materialize.scss */
 .team_card {
   text-align: center;
   animation: load_anime 1s;
@@ -8590,9 +7562,8 @@ table tbody tr td {
   border-radius: .2rem;
   overflow: hidden;
   padding: 1rem;
-  position: relative;
 }
-/* line 497, ../sass/materialize.scss */
+/* line 482, ../sass/materialize.scss */
 .team_card .edit_item {
   position: absolute;
   right: 0;
@@ -8601,7 +7572,7 @@ table tbody tr td {
   padding-right: 1rem;
   cursor: pointer;
 }
-/* line 505, ../sass/materialize.scss */
+/* line 490, ../sass/materialize.scss */
 .team_card .team_card_dp {
   width: 4rem;
   height: 4rem;
@@ -8610,21 +7581,20 @@ table tbody tr td {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 512, ../sass/materialize.scss */
+/* line 497, ../sass/materialize.scss */
 .team_card .team_card_dp img {
   height: 100%;
 }
-/* line 516, ../sass/materialize.scss */
+/* line 501, ../sass/materialize.scss */
 .team_card h6 {
   word-break: break-all;
   max-height: 2rem;
   overflow: hidden;
-  color: #FFF;
 }
 
-/* line 523, ../sass/materialize.scss */
+/* line 507, ../sass/materialize.scss */
 .achievement_stats {
-  background: #FFF;
+  background: white;
   color: #2879FF;
   overflow: hidden;
   max-height: 5rem;
@@ -8632,54 +7602,56 @@ table tbody tr td {
   border-radius: .2rem;
   vertical-align: middle;
 }
-/* line 532, ../sass/materialize.scss */
+/* line 516, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_timestamp {
   min-width: 7rem;
   background: #2879FF;
-  color: #FFF;
+  color: white;
   float: left;
   text-align: center;
 }
-/* line 542, ../sass/materialize.scss */
+/* line 526, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_timestamp .achievement_stats_date {
   background: #82B1FF;
   padding: 0.4rem;
 }
-/* line 546, ../sass/materialize.scss */
+/* line 530, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_timestamp .achievement_stats_year {
   padding: 0.85rem;
 }
-/* line 550, ../sass/materialize.scss */
+/* line 534, ../sass/materialize.scss */
 .achievement_stats .achievement_stats_data {
   float: left;
   min-width: 7rem;
   padding-left: 1rem;
 }
 
-/* line 557, ../sass/materialize.scss */
+/* line 541, ../sass/materialize.scss */
 .team_match_card {
   padding: 1rem;
-  color: #FFF;
+  color: white;
   text-align: center;
   position: relative;
 }
 
-/* line 564, ../sass/materialize.scss */
+/* line 548, ../sass/materialize.scss */
 .team_match_card_date {
   background: rgba(130, 177, 255, 0.9);
-  color: #FFF;
+  color: white;
   padding: 1rem;
   border-radius: .2rem;
 }
 
-/* line 570, ../sass/materialize.scss */
+/* line 554, ../sass/materialize.scss */
 .match_card {
   background: rgba(130, 177, 255, 0.9);
   border-radius: .2rem;
   animation: load_anime 1s;
   position: relative;
 }
+
 /* line 576, ../sass/materialize.scss */
+/* line 561, ../sass/materialize.scss */
 .match_card .edit_item {
   position: absolute;
   right: 0;
@@ -8688,20 +7660,24 @@ table tbody tr td {
   cursor: pointer;
   z-index: 1;
 }
+
 /* line 586, ../sass/materialize.scss */
+/* line 570, ../sass/materialize.scss */
 .match_card .row .col .team_card {
   background: none;
   padding: 1rem;
   animation: none;
 }
+
 /* line 593, ../sass/materialize.scss */
+/* line 576, ../sass/materialize.scss */
 .match_card .row .col .match_card_details {
   background: #2879ff;
   padding: 1rem;
   border-radius: inherit;
 }
 
-/* line 604, ../sass/materialize.scss */
+/* line 581, ../sass/materialize.scss */
 .match_date {
   width: 5rem;
   height: 6rem;
@@ -8716,29 +7692,29 @@ table tbody tr td {
   z-index: 10;
   color: #2879FF;
 }
-/* line 618, ../sass/materialize.scss */
+/* line 595, ../sass/materialize.scss */
 .match_date .match_date_date {
   background: white;
   color: #2879FF;
   border-radius: inherit;
 }
-/* line 623, ../sass/materialize.scss */
+/* line 600, ../sass/materialize.scss */
 .match_date .match_date_year {
   background: #2879FF;
-  color: #FFF;
+  color: white;
   border-radius: inherit;
 }
 
-/* line 629, ../sass/materialize.scss */
+/* line 606, ../sass/materialize.scss */
 .team_squad_card {
   background: rgba(130, 177, 255, 0.9);
   text-align: center;
-  color: #FFF;
+  color: white;
   padding: 1rem;
   border-radius: .2rem;
   animation: load_anime 1s;
 }
-/* line 636, ../sass/materialize.scss */
+/* line 613, ../sass/materialize.scss */
 .team_squad_card .team_squad_card_dp {
   width: 4rem;
   height: 4rem;
@@ -8746,22 +7722,12 @@ table tbody tr td {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 642, ../sass/materialize.scss */
+/* line 619, ../sass/materialize.scss */
 .team_squad_card .team_squad_card_dp img {
   max-height: 100%;
 }
 
-/* line 647, ../sass/materialize.scss */
-.leaderboard_stats_card {
-  background: rgba(130, 177, 255, 0.9);
-  padding: 1rem;
-  border-radius: .2rem;
-  position: relative;
-  animation: load_anime 1s;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-/* line 656, ../sass/materialize.scss */
+/* line 624, ../sass/materialize.scss */
 .leaderboard_stats_card .leaderboard_stats_card_dp {
   width: 8rem;
   height: 8rem;
@@ -8771,28 +7737,36 @@ table tbody tr td {
   border-radius: 50%;
   overflow: hidden;
 }
+
 /* line 664, ../sass/materialize.scss */
+/* line 634, ../sass/materialize.scss */
 .leaderboard_stats_card .leaderboard_stats_card_dp img {
   height: 100%;
 }
 
 /* line 669, ../sass/materialize.scss */
+/* line 639, ../sass/materialize.scss */
 .internal_tabs {
   background: none;
   border: 1px solid #2879FF;
   margin-top: 1rem;
 }
+
 /* line 673, ../sass/materialize.scss */
+/* line 645, ../sass/materialize.scss */
 .internal_tabs .active {
   background: #2879FF;
   color: #FFF;
 }
+
 /* line 677, ../sass/materialize.scss */
+/* line 650, ../sass/materialize.scss */
 .internal_tabs .indicator {
   background: none;
 }
 
 /* line 682, ../sass/materialize.scss */
+/* line 655, ../sass/materialize.scss */
 .editsheet {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -8802,20 +7776,25 @@ table tbody tr td {
   user-select: none;
   cursor: default;
 }
+
 /* line 687, ../sass/materialize.scss */
+/* line 665, ../sass/materialize.scss */
 .editsheet .editheader {
   padding: 1rem;
   background: rgba(130, 177, 255, 0.5);
   color: #FFF;
   text-align: center;
 }
+
 /* line 693, ../sass/materialize.scss */
+/* line 672, ../sass/materialize.scss */
 .editsheet .editform {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.9);
 }
 
 /* line 698, ../sass/materialize.scss */
+/* line 678, ../sass/materialize.scss */
 .createtournament_logo, .createteam_logo {
   width: 7rem;
   height: 7rem;
@@ -8827,6 +7806,7 @@ table tbody tr td {
 }
 
 /* line 713, ../sass/materialize.scss */
+/* line 689, ../sass/materialize.scss */
 .settournamentlogo, .setteamlogo, .setdp {
   background: none !important;
   box-shadow: none !important;
@@ -8844,17 +7824,21 @@ table tbody tr td {
   line-height: 4rem !important;
   margin-top: 0.5rem;
 }
+
 /* line 731, ../sass/materialize.scss */
+/* line 707, ../sass/materialize.scss */
 .settournamentlogo span i, .setteamlogo span i, .setdp span i {
   color: #FFF;
 }
 
 /* line 737, ../sass/materialize.scss */
+/* line 712, ../sass/materialize.scss */
 .createtournament_filepath input, .createteam_filepath input, .setdp_filepath input {
   visibility: hidden;
 }
 
 /* line 741, ../sass/materialize.scss */
+/* line 717, ../sass/materialize.scss */
 .addbtn {
   text-align: center;
   color: #FFF;
@@ -8867,12 +7851,15 @@ table tbody tr td {
 }
 
 /* line 751, ../sass/materialize.scss */
+/* line 729, ../sass/materialize.scss */
 .createmodal {
   background: #FFF;
   overflow-x: hidden;
   overflow-y: visible;
 }
+
 /* line 756, ../sass/materialize.scss */
+/* line 735, ../sass/materialize.scss */
 .createmodal h5 {
   background: #82B1FF;
   color: #FFF;
@@ -8880,7 +7867,9 @@ table tbody tr td {
   padding: 1rem;
   margin-top: 0rem !important;
 }
+
 /* line 762, ../sass/materialize.scss */
+/* line 743, ../sass/materialize.scss */
 .createmodal h5 .modalclose {
   position: absolute;
   right: 0;
@@ -8888,17 +7877,21 @@ table tbody tr td {
   padding: 1rem;
   cursor: pointer;
 }
+
 /* line 771, ../sass/materialize.scss */
+/* line 751, ../sass/materialize.scss */
 .createmodal .createmodal_form {
   padding: 2rem;
 }
 
 /* line 779, ../sass/materialize.scss */
+/* line 756, ../sass/materialize.scss */
 #Set_date {
   padding-left: 4rem;
 }
 
 /* line 782, ../sass/materialize.scss */
+/* line 761, ../sass/materialize.scss */
 .edit_item {
   position: absolute;
   right: 0;
@@ -8908,13 +7901,16 @@ table tbody tr td {
 }
 
 /* line 796, ../sass/materialize.scss */
+/* line 770, ../sass/materialize.scss */
 .modalbuttongroup {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
+
 /* line 803, ../sass/materialize.scss */
+/* line 777, ../sass/materialize.scss */
 .modalbuttongroup a {
   float: left;
   width: 50%;
@@ -8922,11 +7918,13 @@ table tbody tr td {
 }
 
 /* line 809, ../sass/materialize.scss */
+/* line 784, ../sass/materialize.scss */
 .search {
   color: #000;
 }
 
 /* line 812, ../sass/materialize.scss */
+/* line 789, ../sass/materialize.scss */
 .searchresultsbox {
   color: #000;
   margin-top: -4rem;
@@ -8937,27 +7935,40 @@ table tbody tr td {
   cursor: default;
   z-index: 1;
 }
+
 /* line 825, ../sass/materialize.scss */
+/* line 800, ../sass/materialize.scss */
 .searchresultsbox .row .col {
   padding: 0rem !important;
 }
+
 /* line 829, ../sass/materialize.scss */
+/* line 804, ../sass/materialize.scss */
 .searchresultsbox ul {
   padding: 0rem !important;
 }
+
 /* line 831, ../sass/materialize.scss */
+/* line 808, ../sass/materialize.scss */
 .searchresultsbox ul li {
   margin: 0rem;
   padding: 0.5rem;
 }
+
 /* line 835, ../sass/materialize.scss */
+/* line 813, ../sass/materialize.scss */
 .searchresultsbox ul li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 842, ../sass/materialize.scss */
+  /* line 820, ../sass/materialize.scss */
   .logo {
     float: right;
+  }
+
+  /* line 826, ../sass/materialize.scss */
+  .userinfo {
+    height: 17rem;
   }
 }

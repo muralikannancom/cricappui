@@ -23,7 +23,7 @@
 @import "components/tabs";
 @import "components/tooltip";
 @import "components/buttons";
-// @import "components/dropdown";
+@import "components/dropdown";
 // @import "components/waves";
 // @import "components/modal";
 // @import "components/collapsible";
@@ -118,6 +118,39 @@ a:hover{
 .nomargin{
   margin: 0rem !important;
 }
+.center {
+  margin: 0 auto;
+}
+.dark {
+  color: #000;
+}
+.processing {
+  background: rgba(130, 177, 255, 0.6) !important;
+  cursor: default;
+  box-shadow: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 147, ../sass/materialize.scss */
+.processing:hover {
+  box-shadow: none;
+}
+
+/* line 150, ../sass/materialize.scss */
+.joined:hover {
+  background: red !important;
+}
+
+/* line 153, ../sass/materialize.scss */
+.editbg {
+  filter: blur(0.8rem);
+  -webkit-filter: blur(0.8rem);
+}
 .topsegment{
   position: fixed;
   left: 0;
@@ -145,6 +178,23 @@ a:hover{
     }
   }
 }
+.username_disp_desktop {
+  color: #FFF;
+  text-align: right;
+  padding: 1rem;
+  z-index: 2 !important;
+}
+/* line 193, ../sass/materialize.scss */
+.username_disp_desktop h6 {
+  max-width: 15rem;
+  position: absolute;
+  right: 8.8rem;
+  top: 2.5rem;
+  background: #2879FF;
+  padding: 0.4rem;
+  transform: skewX(-10deg);
+  transition: all 0.1s linear 0.1s;
+}
 .profile_dp_box{
   position: relative;
   margin-right: 2rem;
@@ -170,11 +220,22 @@ ul{
   background-size: cover;
   cursor: pointer;
   // border: 1rem solid $secondary-color;
+  ul {
+    width: auto;
+    margin-right: 0rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+  }
   img{
     height: 100%;
     transform: skewX(10deg);
     margin-left: -10%;
   }
+}
+.profile_dp_box:hover + .username_disp_desktop h6 {
+  right: 5rem;
+  width: 0rem;
+  transition: all 0.1s linear 0.1s;
 }
 .dp_icon_anime{
   // animation: dp_icon_anime 1s;
@@ -233,6 +294,18 @@ ul{
   // vertical-align: calc;
   font-size: 2rem;
   display: grid;
+}
+.username_disp_desktop{
+  h6{
+    max-width: 15rem;
+    position: absolute;
+    right: 8.8rem;
+    top: 2.5rem;
+    background: #2879FF;
+    padding: 0.4rem;
+    transform: skewX(-10deg);
+    transition: all 0.1s linear 0.1s;
+  }
 }
 .add_fab{
   .fixed-action-btn{
@@ -329,6 +402,12 @@ ul{
   // padding: 1rem;
   // animation: content_load_anime 1s;
 }
+.table_seg_title {
+  color: #FFF;
+  background: #2879FF;
+  margin-bottom: 0rem;
+  padding: 1rem;
+}
 .stats{
   padding: 1rem;
   background: $stats_card_bg;
@@ -400,6 +479,14 @@ li{
   border-radius: .2rem;
   overflow: hidden;
   padding: 1rem;
+  .edit_item {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
   .team_card_dp{
     width: 4rem;
     height: 4rem;
@@ -464,6 +551,33 @@ li{
   padding: 1rem;
   border-radius: .2rem;
 }
+.match_card {
+  background: rgba(130, 177, 255, 0.9);
+  border-radius: .2rem;
+  animation: load_anime 1s;
+  position: relative;
+}
+/* line 576, ../sass/materialize.scss */
+.match_card .edit_item {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 586, ../sass/materialize.scss */
+.match_card .row .col .team_card {
+  background: none;
+  padding: 1rem;
+  animation: none;
+}
+/* line 593, ../sass/materialize.scss */
+.match_card .row .col .match_card_details {
+  background: #2879ff;
+  padding: 1rem;
+  border-radius: inherit;
+}
 .match_date{
   width: 5rem;
   height: 6rem;
@@ -507,6 +621,199 @@ li{
       }
     }
 }
+.leaderboard_stats_card .leaderboard_stats_card_dp {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 664, ../sass/materialize.scss */
+.leaderboard_stats_card .leaderboard_stats_card_dp img {
+  height: 100%;
+}
+
+/* line 669, ../sass/materialize.scss */
+.internal_tabs {
+  background: none;
+  border: 1px solid #2879FF;
+  margin-top: 1rem;
+}
+/* line 673, ../sass/materialize.scss */
+.internal_tabs .active {
+  background: #2879FF;
+  color: #FFF;
+}
+/* line 677, ../sass/materialize.scss */
+.internal_tabs .indicator {
+  background: none;
+}
+
+/* line 682, ../sass/materialize.scss */
+.editsheet {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 687, ../sass/materialize.scss */
+.editsheet .editheader {
+  padding: 1rem;
+  background: rgba(130, 177, 255, 0.5);
+  color: #FFF;
+  text-align: center;
+}
+/* line 693, ../sass/materialize.scss */
+.editsheet .editform {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* line 698, ../sass/materialize.scss */
+.createtournament_logo, .createteam_logo {
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+/* line 713, ../sass/materialize.scss */
+.settournamentlogo, .setteamlogo, .setdp {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: #000;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 4rem !important;
+  height: 4rem !important;
+  background: rgba(130, 177, 255, 0.6) !important;
+  border-radius: 50%;
+  line-height: 4rem !important;
+  margin-top: 0.5rem;
+}
+/* line 731, ../sass/materialize.scss */
+.settournamentlogo span i, .setteamlogo span i, .setdp span i {
+  color: #FFF;
+}
+
+/* line 737, ../sass/materialize.scss */
+.createtournament_filepath input, .createteam_filepath input, .setdp_filepath input {
+  visibility: hidden;
+}
+
+/* line 741, ../sass/materialize.scss */
+.addbtn {
+  text-align: center;
+  color: #FFF;
+  width: 10rem;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 2rem;
+  animation: load_anime 1s;
+}
+
+/* line 751, ../sass/materialize.scss */
+.createmodal {
+  background: #FFF;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+/* line 756, ../sass/materialize.scss */
+.createmodal h5 {
+  background: #82B1FF;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0rem !important;
+}
+/* line 762, ../sass/materialize.scss */
+.createmodal h5 .modalclose {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+/* line 771, ../sass/materialize.scss */
+.createmodal .createmodal_form {
+  padding: 2rem;
+}
+
+/* line 779, ../sass/materialize.scss */
+#Set_date {
+  padding-left: 4rem;
+}
+
+/* line 782, ../sass/materialize.scss */
+.edit_item {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* line 796, ../sass/materialize.scss */
+.modalbuttongroup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 803, ../sass/materialize.scss */
+.modalbuttongroup a {
+  float: left;
+  width: 50%;
+  border-radius: 0rem;
+}
+
+/* line 809, ../sass/materialize.scss */
+.search {
+  color: #000;
+}
+
+/* line 812, ../sass/materialize.scss */
+.searchresultsbox {
+  color: #000;
+  margin-top: -4rem;
+  max-height: 5rem;
+  overflow: scroll;
+  width: 100%;
+  background: white;
+  cursor: default;
+  z-index: 1;
+}
+/* line 825, ../sass/materialize.scss */
+.searchresultsbox .row .col {
+  padding: 0rem !important;
+}
+/* line 829, ../sass/materialize.scss */
+.searchresultsbox ul {
+  padding: 0rem !important;
+}
+/* line 831, ../sass/materialize.scss */
+.searchresultsbox ul li {
+  margin: 0rem;
+  padding: 0.5rem;
+}
+/* line 835, ../sass/materialize.scss */
+.searchresultsbox ul li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 // mobile overrides
 
 @media #{$small-and-down} {
